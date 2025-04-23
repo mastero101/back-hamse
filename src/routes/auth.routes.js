@@ -1,13 +1,15 @@
 const router = require('express').Router();
 const authController = require('../controllers/auth.controller');
-const { verifyToken, verifyRefreshToken } = require('../middleware/auth.jwt');
+const { verifyToken, verifyRefreshToken, isAdmin } = require('../middleware/auth.jwt');
 
 /**
  * @swagger
  * /api/auth/signup:
  *   post:
- *     summary: Register a new user
+ *     summary: Register a new user (Admin only)
  *     tags: [Auth]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -31,10 +33,12 @@ const { verifyToken, verifyRefreshToken } = require('../middleware/auth.jwt');
  *     responses:
  *       201:
  *         description: User created successfully
+ *       403:
+ *         description: Require Admin Role
  *       500:
  *         description: Server error
  */
-router.post('/signup', authController.signup);
+router.post('/signup', [verifyToken, isAdmin], authController.signup);
 
 /**
  * @swagger
