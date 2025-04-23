@@ -23,7 +23,7 @@ HAMSE es un sistema de gestión de mantenimiento que permite administrar y dar s
 ## Instalación
 1. Clonar el repositorio:
 ```bash
-git clone <repository-url>
+git clone https://github.com/mastero101/back-hamse.git
 cd back-hamse
  ```
 
@@ -38,7 +38,6 @@ npm install
 DATABASE_URL=postgres://username:password@host:port/hamse
 PORT=1072
  ```
-```
 
 4. Iniciar el servidor:
 ```bash
