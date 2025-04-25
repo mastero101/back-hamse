@@ -50,3 +50,4 @@ temp/
 
 # Debug files
 .debug
+.vercel

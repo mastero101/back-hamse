@@ -2,13 +2,13 @@ const { Sequelize } = require('sequelize');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
 
-// Modify URL to ensure we're connecting to the 'hamse' database
 const dbUrl = process.env.DATABASE_URL.includes('hamse') 
     ? process.env.DATABASE_URL 
     : `${process.env.DATABASE_URL.replace(/\/[^/]*$/, '')}/hamse`;
 
 const sequelize = new Sequelize(dbUrl, {
     dialect: 'postgres',
+    dialectModule: require('pg'),  // Añadimos esta línea
     ssl: true,
     dialectOptions: {
         ssl: {
