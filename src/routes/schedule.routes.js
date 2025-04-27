@@ -193,4 +193,55 @@ router.delete('/:id', scheduleController.delete);
  */
 router.put('/:id/progress', scheduleController.updateProgress);
 
+/**
+ * @swagger
+ * /api/schedules/{id}/statuses:
+ *   put:
+ *     summary: Update statuses for activities within a schedule
+ *     tags: [Schedules]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *           format: uuid
+ *         description: The ID of the schedule to update statuses for.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               statuses:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   required:
+ *                     - activityId
+ *                     - state
+ *                   properties:
+ *                     activityId:
+ *                       type: string
+ *                       format: uuid
+ *                     state:
+ *                       type: string
+ *                       enum: [pending, completed, not_applicable] # Ajusta según tus estados
+ *                     notes: # Opcional
+ *                       type: string
+ *     responses:
+ *       200:
+ *         description: Activity statuses updated successfully
+ *       400:
+ *         description: Invalid input data
+ *       404:
+ *         description: Schedule or Activity not found
+ *       500:
+ *         description: Server error
+ */
+router.put('/:id/statuses', scheduleController.updateActivityStatuses); // <-- Nueva ruta
+
 module.exports = router;

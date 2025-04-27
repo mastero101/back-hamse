@@ -7,8 +7,9 @@ const Status = sequelize.define('Status', {
         primaryKey: true
     },
     state: {
-        type: Sequelize.ENUM('verified', 'not_applicable', 'unchecked'),
-        defaultValue: 'unchecked'
+        type: Sequelize.ENUM('pending', 'completed', 'not_applicable'), // <-- Valores actualizados
+        allowNull: false, // Es buena práctica asegurar que no sea nulo
+        defaultValue: 'pending' // <-- Actualizar defaultValue si 'pending' es el nuevo estado inicial
     },
     completedAt: {
         type: Sequelize.DATE
