@@ -7,9 +7,9 @@ const Status = sequelize.define('Status', {
         primaryKey: true
     },
     state: {
-        type: Sequelize.ENUM('pending', 'completed', 'not_applicable'), // <-- Valores actualizados
-        allowNull: false, // Es buena práctica asegurar que no sea nulo
-        defaultValue: 'pending' // <-- Actualizar defaultValue si 'pending' es el nuevo estado inicial
+        type: Sequelize.ENUM('pending', 'completed', 'not_applicable'),
+        allowNull: false,
+        defaultValue: 'pending'
     },
     completedAt: {
         type: Sequelize.DATE
@@ -23,6 +23,15 @@ const Status = sequelize.define('Status', {
             model: 'Users',
             key: 'id'
         }
+    },
+    scheduleId: {
+        type: Sequelize.UUID,
+        allowNull: true, // Changed from false to true to match migration result
+        references: {
+            model: 'Schedules',
+            key: 'id'
+        }
+        // Removed onDelete and onUpdate here as they are better handled by the migration/database constraint
     }
 });
 

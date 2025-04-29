@@ -6,9 +6,9 @@ const dbUrl = process.env.DATABASE_URL.includes('hamse')
     ? process.env.DATABASE_URL 
     : `${process.env.DATABASE_URL.replace(/\/[^/]*$/, '')}/hamse`;
 
-const sequelize = new Sequelize(dbUrl, {
+const config = {
     dialect: 'postgres',
-    dialectModule: require('pg'),  // Añadimos esta línea
+    dialectModule: require('pg'),
     ssl: true,
     dialectOptions: {
         ssl: {
@@ -17,7 +17,9 @@ const sequelize = new Sequelize(dbUrl, {
         }
     },
     logging: false
-});
+};
+
+const sequelize = new Sequelize(dbUrl, config);
 
 const initializeDatabase = async () => {
     try {
@@ -55,4 +57,21 @@ const initializeDatabase = async () => {
     }
 };
 
-module.exports = { sequelize, Sequelize, initializeDatabase };
+// Añadir esta configuración para las migraciones
+module.exports = {
+    development: {
+        ...config,
+        url: dbUrl
+    },
+    test: {
+        ...config,
+        url: dbUrl
+    },
+    production: {
+        ...config,
+        url: dbUrl
+    },
+    sequelize,
+    Sequelize,
+    initializeDatabase
+};

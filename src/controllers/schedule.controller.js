@@ -11,20 +11,36 @@ const scheduleController = {
             });
 
             if (req.body.activities && Array.isArray(req.body.activities)) {
-                console.log('Attempting to set activities:', req.body.activities); // Log para ver los IDs
+                // Extraer solo los IDs de las actividades
+                const activityIds = req.body.activities.map(activity => activity.id);
+                console.log('Attempting to set activities with IDs:', activityIds); // Log para ver los IDs
                 try {
-                    await schedule.setActivities(req.body.activities);
+                    // Pasar solo los IDs a setActivities
+                    await schedule.setActivities(activityIds);
                     console.log('Successfully set activities for schedule:', schedule.id); // Log de éxito
                 } catch (assocError) {
                     console.error('Error setting activities:', assocError); // Log si setActivities falla
+                    // Considerar si el error debe detener la creación o solo registrarse
                 }
             } else {
                 console.log('No valid activities array found in request body.'); // Log si no hay activities
             }
 
+            // Devolver el schedule recién creado, incluyendo las actividades asociadas
+            const createdScheduleWithActivities = await Schedule.findByPk(schedule.id, {
+                 include: [
+                     {
+                         model: Activity,
+                         // Opcional: Incluir Status si es necesario inmediatamente después de crear
+                         // include: [{ model: Status, attributes: ['state', 'completedAt', 'notes'] }]
+                     },
+                     { model: User, attributes: ['id', 'username'] }
+                 ]
+             });
+
             return res.status(201).json({
                 status: 'success',
-                data: schedule
+                data: createdScheduleWithActivities // Devolver con actividades
             });
         } catch (error) {
             console.error('Error creating schedule:', error); // Log del error general
@@ -44,7 +60,10 @@ const scheduleController = {
                         through: { attributes: [] },
                         include: [{ // <-- Añadir inclusión de Status aquí
                             model: Status,
-                            attributes: ['state', 'completedAt', 'notes'] // Especifica los atributos que necesitas
+                            // Filtrar Status por el scheduleId actual si es necesario
+                            // where: { scheduleId: Sequelize.col('Schedule.id') }, // Puede requerir ajustes
+                            required: false, // Left join para incluir actividades sin estado aún
+                            attributes: ['state', 'completedAt', 'notes', 'scheduleId', 'ActivityId'] // Especifica los atributos que necesitas
                         }]
                     },
                     {
@@ -54,11 +73,16 @@ const scheduleController = {
                 ]
             });
 
+            // Opcional: Procesar para asegurar que solo se muestre el Status relevante por schedule
+            // Esto puede ser complejo y es mejor manejarlo en la consulta si es posible
+            // o filtrar en el frontend/backend después de la consulta.
+
             return res.json({
                 status: 'success',
                 data: schedules
             });
         } catch (error) {
+            console.error('Error finding all schedules:', error); // Log de error
             return res.status(500).json({
                 status: 'error',
                 message: error.message
@@ -72,8 +96,10 @@ const scheduleController = {
                 include: [
                     {
                         model: Activity,
-                        include: [{ // <-- Asegurarse que Status está incluido (ya estaba)
+                        include: [{
                             model: Status,
+                            where: { scheduleId: req.params.id }, // Filtrar Status por este scheduleId
+                            required: false, // Left join para incluir actividades sin estado para este schedule
                             attributes: ['state', 'completedAt', 'notes']
                         }]
                     },
@@ -96,12 +122,14 @@ const scheduleController = {
                 data: schedule
             });
         } catch (error) {
+            console.error(`Error finding schedule ${req.params.id}:`, error); // Log de error
             return res.status(500).json({
                 status: 'error',
                 message: error.message
             });
         }
     },
+
 
     update: async (req, res) => {
         try {
@@ -115,25 +143,44 @@ const scheduleController = {
             }
 
             console.log(`Updating schedule ${req.params.id} with body:`, JSON.stringify(req.body, null, 2)); // Log para ver el body
-            await schedule.update(req.body);
+            // Actualizar campos del schedule excepto las actividades
+            const { activities, ...updateData } = req.body;
+            await schedule.update(updateData);
 
-            if (req.body.activities && Array.isArray(req.body.activities)) {
-                console.log('Attempting to set activities:', req.body.activities); // Log para ver los IDs
+            if (activities && Array.isArray(activities)) {
+                 // Extraer solo los IDs de las actividades
+                const activityIds = activities.map(activity => activity.id);
+                console.log('Attempting to set activities with IDs:', activityIds); // Log para ver los IDs
                 try {
-                    await schedule.setActivities(req.body.activities);
+                     // Pasar solo los IDs a setActivities
+                    await schedule.setActivities(activityIds);
                     console.log('Successfully set activities for schedule:', schedule.id); // Log de éxito
                 } catch (assocError) {
-                    console.error('Error setting activities:', assocError); // Log si setActivities falla
+                    console.error('Error setting activities during update:', assocError); // Log si setActivities falla
+                     // Considerar si el error debe detener la actualización
                 }
             } else {
                 console.log('No valid activities array found in request body for update.'); // Log si no hay activities
             }
 
-            // Devolver el schedule actualizado con sus asociaciones (si las tiene)
-            const updatedSchedule = await Schedule.findByPk(req.params.id, { include: [Activity] });
+            // Devolver el schedule actualizado con sus asociaciones (incluyendo Status filtrado)
+            const updatedSchedule = await Schedule.findByPk(req.params.id, {
+                 include: [
+                     {
+                         model: Activity,
+                         include: [{
+                             model: Status,
+                             where: { scheduleId: req.params.id }, // Filtrar Status por este scheduleId
+                             required: false,
+                             attributes: ['state', 'completedAt', 'notes']
+                         }]
+                     },
+                     { model: User, attributes: ['id', 'username'] }
+                 ]
+             });
             return res.json({
                 status: 'success',
-                data: updatedSchedule // Devolver el schedule con las actividades
+                data: updatedSchedule // Devolver el schedule con las actividades y sus estados relevantes
             });
         } catch (error) {
             console.error(`Error updating schedule ${req.params.id}:`, error); // Log del error general
@@ -172,163 +219,270 @@ const scheduleController = {
     updateProgress: async (req, res) => {
         // Asegúrate que este método también esté completo y correcto
         try {
-            const schedule = await Schedule.findByPk(req.params.id);
+            const scheduleId = req.params.id;
+            console.log(`[${new Date().toISOString()}] Manual progress update requested for schedule ${scheduleId}`);
+            const schedule = await Schedule.findByPk(scheduleId);
             if (!schedule) {
                 return res.status(404).json({ status: 'error', message: 'Schedule not found' });
             }
 
-            // Recalcular progreso basado en los Status asociados a las Activities del Schedule
-            const activities = await schedule.getActivities({ include: [Status] });
-            const totalActivities = activities.length;
-            if (totalActivities === 0) {
-                await schedule.update({ progress: 100, status: 'completed' }); // O 0 y 'pending' si no hay actividades
-                return res.json({ status: 'success', data: { progress: schedule.progress } });
-            }
-
-            let completedCount = 0;
-            activities.forEach(activity => {
-                // Asumiendo que Status está directamente en Activity o a través de una relación
-                // y que 'completed' es el estado final. Ajusta la lógica si es necesario.
-                if (activity.Status && activity.Status.state === 'completed') {
-                    completedCount++;
-                }
+            // --- Copia/Refactoriza la lógica de cálculo de progreso aquí si es necesario ---
+            // (Esta es la lógica que también está en updateActivityStatuses)
+            const activities = await schedule.getActivities({
+                include: [{
+                    model: Status,
+                    where: { scheduleId: scheduleId },
+                    required: false
+                }]
             });
+            const totalActivities = activities.length;
+            let completedCount = 0;
+            let progress = 0;
+            let scheduleStatus = schedule.status;
 
-            const progress = Math.round((completedCount / totalActivities) * 100);
-            let scheduleStatus = 'in_progress';
-            if (progress === 100) {
-                scheduleStatus = 'completed';
-            } else if (progress === 0) {
-                // Podrías querer mantener 'pending' o 'in_progress' si ya se empezó
-                 scheduleStatus = schedule.status === 'pending' ? 'pending' : 'in_progress';
+            if (totalActivities > 0) {
+                activities.forEach(activity => {
+                    const relevantStatus = activity.Statuses?.[0];
+                    if (relevantStatus && relevantStatus.state === 'completed') {
+                        completedCount++;
+                    }
+                });
+                progress = Math.round((completedCount / totalActivities) * 100);
+
+                if (progress === 100) {
+                    scheduleStatus = 'completed';
+                } else if (progress > 0) {
+                    scheduleStatus = 'in_progress';
+                } else { // progress === 0
+                    scheduleStatus = 'pending'; // O mantener 'in_progress' si ya lo estaba? Decide la lógica.
+                }
+            } else {
+                progress = 100; // O 0?
+                scheduleStatus = 'completed'; // O 'pending'?
             }
 
-            await schedule.update({ progress, status: scheduleStatus });
+            if (schedule.progress !== progress || schedule.status !== scheduleStatus) {
+                console.log(`[${new Date().toISOString()}] Updating schedule ${scheduleId} progress to ${progress}% and status to ${scheduleStatus}.`);
+                await schedule.update({ progress, status: scheduleStatus });
+            } else {
+                console.log(`[${new Date().toISOString()}] Schedule ${scheduleId} progress/status unchanged.`);
+            }
+            // --- Fin lógica cálculo ---
 
-            return res.json({ status: 'success', data: { progress: schedule.progress } });
+            return res.json({ status: 'success', data: { progress: schedule.progress, status: schedule.status } });
         } catch (error) {
-             console.error(`Error updating progress for schedule ${req.params.id}:`, error);
+             console.error(`[${new Date().toISOString()}] Error updating progress for schedule ${req.params.id}:`, error);
              return res.status(500).json({ status: 'error', message: error.message });
         }
     },
 
+
     // --- Nueva función ---
     updateActivityStatuses: async (req, res) => {
         const scheduleId = req.params.id;
-        const statusUpdates = req.body.statuses; // Espera { statuses: [ { activityId, state, notes? }, ... ] }
+        const statusUpdates = req.body.statuses; // Espera { statuses: [ { activityId: '...', state: '...' }, ... ] }
+
+        // Log recibido
+        console.log(`[${new Date().toISOString()}] Received PUT /schedules/${scheduleId}/statuses`);
+        console.log(`Payload:`, JSON.stringify(req.body, null, 2));
+
 
         if (!Array.isArray(statusUpdates)) {
+            console.error(`[${new Date().toISOString()}] Invalid input: statuses is not an array.`);
             return res.status(400).json({ status: 'error', message: 'Invalid input: statuses must be an array.' });
         }
 
+        // Opcional: Manejar el caso de un array vacío si no se considera un error
+        if (statusUpdates.length === 0) {
+             console.warn(`[${new Date().toISOString()}] Received empty statuses array for schedule ${scheduleId}. No action taken.`);
+             // Podrías devolver el estado actual del schedule si lo deseas
+             const currentSchedule = await Schedule.findByPk(scheduleId, {
+                 include: [
+                     { model: Activity, include: [{ model: Status, where: { scheduleId: scheduleId }, required: false }] },
+                     { model: User, attributes: ['id', 'username'] }
+                 ]
+             });
+             return res.json({ status: 'success', message: 'No status updates provided.', data: currentSchedule });
+        }
+
+
         const transaction = await sequelize.transaction();
+        console.log(`[${new Date().toISOString()}] Transaction started for schedule ${scheduleId}`);
 
         try {
             const schedule = await Schedule.findByPk(scheduleId, { transaction });
             if (!schedule) {
                 await transaction.rollback();
+                console.error(`[${new Date().toISOString()}] Schedule ${scheduleId} not found.`);
                 return res.status(404).json({ status: 'error', message: 'Schedule not found' });
             }
 
-            // Validar que todas las actividades pertenezcan al schedule (opcional pero recomendado)
-            const scheduleActivities = await schedule.getActivities({ attributes: ['id'], transaction });
-            const scheduleActivityIds = new Set(scheduleActivities.map(a => a.id));
+            // Obtener IDs de las actividades actualmente asociadas al schedule para validación
+            const associatedActivities = await schedule.getActivities({ attributes: ['id'], transaction });
+            const associatedActivityIds = new Set(associatedActivities.map(a => a.id));
+            console.log(`[${new Date().toISOString()}] Activities associated with schedule ${scheduleId}:`, Array.from(associatedActivityIds));
 
-            for (const update of statusUpdates) {
-                if (!update.activityId || !update.state) {
-                    throw new Error(`Invalid status update object: ${JSON.stringify(update)}. Missing activityId or state.`);
+
+            const promises = statusUpdates.map(async (update) => {
+                console.log(`[${new Date().toISOString()}] Processing update for Activity ${update.activityId}: state=${update.state}`);
+
+                // 1. Validar que el Activity ID existe en la tabla Activities (opcional pero recomendado)
+                const activity = await Activity.findByPk(update.activityId, { attributes: ['id'], transaction });
+                 if (!activity) {
+                     console.error(`[${new Date().toISOString()}] Validation Error: Activity ${update.activityId} not found.`);
+                     throw new Error(`Activity with ID ${update.activityId} not found.`); // Esto causará un rollback y error 400/500
+                 }
+
+                // 2. Validar que esta Actividad está realmente asociada a este Schedule
+                if (!associatedActivityIds.has(update.activityId)) {
+                    console.error(`[${new Date().toISOString()}] Validation Error: Activity ${update.activityId} is not associated with schedule ${scheduleId}.`);
+                    throw new Error(`Activity ${update.activityId} is not associated with schedule ${scheduleId}.`); // Causará rollback y error 400
                 }
-                if (!scheduleActivityIds.has(update.activityId)) {
-                     throw new Error(`Activity ${update.activityId} does not belong to schedule ${scheduleId}.`);
+
+                // 3. Validar que el valor 'state' es uno de los permitidos por el ENUM del modelo Status
+                const validStates = Status.getAttributes().state.values; // Obtener valores del ENUM dinámicamente
+                if (!validStates.includes(update.state)) {
+                    console.error(`[${new Date().toISOString()}] Validation Error: Invalid state value "${update.state}" for Activity ${update.activityId}. Valid states: ${validStates.join(', ')}`);
+                    throw new Error(`Invalid state value: ${update.state}. Must be one of ${validStates.join(', ')}.`); // Causará rollback y error 400
                 }
 
-                // Encuentra la actividad para asegurar que existe (aunque ya validamos pertenencia)
-                const activity = await Activity.findByPk(update.activityId, { transaction });
-                if (!activity) {
-                     // Esto no debería pasar si la validación anterior funcionó, pero por si acaso
-                     throw new Error(`Activity ${update.activityId} not found.`);
-                }
 
-                // Encuentra o crea el registro de Status para esta Actividad
-                // NOTA: Esto asume un Status por Actividad. Si necesitas Status por Actividad POR Schedule,
-                // la lógica y/o el modelo necesitarían cambiar (ej. Status asociado a ActivitySchedule).
-                let statusRecord = await Status.findOne({ where: { ActivityId: activity.id }, transaction });
+                // 4. Buscar un Status existente para esta combinación Schedule-Activity o crearlo si no existe
+                const [status, created] = await Status.findOrCreate({
+                    where: {
+                        scheduleId: scheduleId,
+                        ActivityId: update.activityId // Asume que la FK en Status es ActivityId (estándar de Sequelize)
+                    },
+                    defaults: {
+                        state: update.state,
+                        // Podrías añadir 'verifiedBy: req.userId' aquí si es relevante
+                        completedAt: update.state === 'completed' ? new Date() : null // Establecer fecha si se completa
+                    },
+                    transaction
+                });
 
-                const statusData = {
-                    state: update.state,
-                    notes: update.notes || null, // Asignar notas si existen, sino null
-                    completedAt: update.state === 'completed' ? new Date() : null, // Marcar completado si aplica
-                    ActivityId: activity.id // Asegurar la asociación
-                };
-
-                if (statusRecord) {
-                    // Actualizar estado existente
-                    await statusRecord.update(statusData, { transaction });
-                    console.log(`Updated status for activity ${activity.id} to ${update.state}`);
+                if (!created) {
+                    // Si ya existía (found), actualizar su estado (y completedAt si es necesario)
+                    if (status.state !== update.state) { // Solo actualizar si el estado cambió
+                       console.log(`[${new Date().toISOString()}] Found existing status for Activity ${update.activityId}. Updating state from ${status.state} to ${update.state}.`);
+                       await status.update({
+                           state: update.state,
+                           completedAt: update.state === 'completed' ? new Date() : null // Actualizar completedAt
+                           // Podrías actualizar 'verifiedBy: req.userId' aquí también
+                       }, { transaction });
+                    } else {
+                       console.log(`[${new Date().toISOString()}] Status for Activity ${update.activityId} already is ${update.state}. No update needed.`);
+                    }
                 } else {
-                    // Crear nuevo estado si no existe
-                    statusRecord = await Status.create(statusData, { transaction });
-                    console.log(`Created status for activity ${activity.id} with state ${update.state}`);
-                    // Si Status no estaba asociado automáticamente a Activity (depende de tus modelos),
-                    // podrías necesitar asociarlo explícitamente aquí.
-                    // await activity.setStatus(statusRecord, { transaction }); // Descomentar si es necesario
+                    console.log(`[${new Date().toISOString()}] Created new status for Activity ${update.activityId} with state ${update.state}.`);
                 }
-            }
+                return status; // Devolver el status encontrado o creado
+            });
 
-            // Recalcular el progreso del Schedule después de actualizar los estados
-            const activities = await schedule.getActivities({ include: [Status], transaction });
-            const totalActivities = activities.length;
+            // Esperar a que todas las operaciones de findOrCreate/update terminen
+            await Promise.all(promises);
+            console.log(`[${new Date().toISOString()}] All status updates processed successfully for schedule ${scheduleId}.`);
+
+
+            // --- Recalcular Progreso y Estado del Schedule ---
+            // Volver a obtener las actividades con sus estados *actualizados* dentro de la transacción
+            const activitiesWithUpdatedStatus = await schedule.getActivities({
+                include: [{
+                    model: Status,
+                    where: { scheduleId: scheduleId }, // Asegura que solo obtenemos status de este schedule
+                    required: false // LEFT JOIN para incluir actividades sin status aún
+                }],
+                transaction // Importante leer dentro de la transacción
+            });
+
+            const totalActivities = activitiesWithUpdatedStatus.length;
             let completedCount = 0;
+            let newProgress = 0;
+            let newScheduleStatus = schedule.status; // Empezar con el estado actual
+
             if (totalActivities > 0) {
-                activities.forEach(act => {
-                    // Asegúrate que act.Status existe y tiene la propiedad 'state'
-                    if (act.Status && act.Status.state === 'completed') {
+                activitiesWithUpdatedStatus.forEach(activity => {
+                    // El 'where' en el include debería filtrar, así que Statuses[0] es el relevante
+                    const relevantStatus = activity.Statuses?.[0];
+                    if (relevantStatus && relevantStatus.state === 'completed') {
                         completedCount++;
                     }
                 });
-                const progress = Math.round((completedCount / totalActivities) * 100);
-                let scheduleStatus = 'in_progress';
-                 if (progress === 100) scheduleStatus = 'completed';
-                 else if (completedCount === 0 && schedule.status === 'pending') scheduleStatus = 'pending'; // Mantener pending si no se ha iniciado nada
+                newProgress = Math.round((completedCount / totalActivities) * 100);
 
-                await schedule.update({ progress, status: scheduleStatus }, { transaction });
-                console.log(`Updated schedule ${scheduleId} progress to ${progress}% and status to ${scheduleStatus}`);
+                // Lógica para determinar el nuevo estado del schedule
+                if (newProgress === 100) {
+                    newScheduleStatus = 'completed';
+                } else if (newProgress > 0 && schedule.status === 'pending') {
+                    // Si estaba pendiente y se hizo algo, pasa a en progreso
+                    newScheduleStatus = 'in_progress';
+                } else if (newProgress > 0) {
+                     // Si ya estaba en progreso o completado y baja de 100, se queda en progreso
+                     newScheduleStatus = 'in_progress';
+                } else { // newProgress === 0
+                    // Si el progreso es 0, debería ser 'pending' a menos que ya estuviera 'in_progress'?
+                    // Decide la lógica: ¿puede volver a 'pending' desde 'in_progress'?
+                    newScheduleStatus = 'pending'; // O mantener 'in_progress' si es preferible
+                }
+
             } else {
-                 await schedule.update({ progress: 100, status: 'completed' }, { transaction }); // O 0 y pending
-                 console.log(`Updated schedule ${scheduleId} (no activities) progress to 100% and status to completed`);
+                 // Si no hay actividades, ¿el schedule está completo o pendiente?
+                 newProgress = 100; // Asumir 100% si no hay tareas?
+                 newScheduleStatus = 'completed'; // Asumir completado? O 'pending'?
             }
 
+            // Solo actualizar el schedule si el progreso o el estado han cambiado
+            if (schedule.progress !== newProgress || schedule.status !== newScheduleStatus) {
+               console.log(`[${new Date().toISOString()}] Updating schedule ${scheduleId} progress from ${schedule.progress}% to ${newProgress}% and status from ${schedule.status} to ${newScheduleStatus}.`);
+               await schedule.update({ progress: newProgress, status: newScheduleStatus }, { transaction });
+            } else {
+               console.log(`[${new Date().toISOString()}] Schedule ${scheduleId} progress (${schedule.progress}%) and status (${schedule.status}) remain unchanged.`);
+            }
+            // --- Fin Recalcular Progreso ---
 
-            await transaction.commit(); // Confirmar todos los cambios
 
-            // Devolver el schedule actualizado con sus actividades y estados
-             const updatedSchedule = await Schedule.findByPk(scheduleId, {
+            // Si todo fue bien, confirmar la transacción
+            await transaction.commit();
+            console.log(`[${new Date().toISOString()}] Transaction committed successfully for schedule ${scheduleId}.`);
+
+
+            // Obtener el schedule final actualizado con todas sus asociaciones para devolverlo
+            const finalUpdatedSchedule = await Schedule.findByPk(scheduleId, {
                  include: [
                      {
                          model: Activity,
-                         include: [{ model: Status, attributes: ['state', 'completedAt', 'notes'] }]
+                         include: [{
+                             model: Status,
+                             where: { scheduleId: scheduleId },
+                             required: false,
+                             attributes: ['state', 'completedAt', 'notes'] // Ajusta los atributos según necesites
+                         }]
                      },
                      { model: User, attributes: ['id', 'username'] }
                  ]
              });
 
-
-            return res.json({
-                status: 'success',
-                message: 'Activity statuses updated successfully.',
-                data: updatedSchedule // Devolver el schedule actualizado
-            });
+            console.log(`[${new Date().toISOString()}] Successfully updated statuses for schedule ${scheduleId}. Returning updated schedule.`);
+            return res.json({ status: 'success', data: finalUpdatedSchedule }); // Devolver el schedule actualizado
 
         } catch (error) {
-            await transaction.rollback(); // Revertir en caso de error
-            console.error(`Error updating activity statuses for schedule ${scheduleId}:`, error);
-            return res.status(500).json({
+            // Si algo falló, revertir la transacción
+            await transaction.rollback();
+            console.error(`[${new Date().toISOString()}] Error during status update for schedule ${scheduleId}. Transaction rolled back. Error: ${error.message}`, error.stack);
+
+            // Determinar el código de estado HTTP basado en el tipo de error
+            let statusCode = 500; // Error interno del servidor por defecto
+            if (error.message.includes("not found") || error.message.includes("not associated") || error.message.includes("Invalid state value")) {
+                statusCode = 400; // Bad Request debido a validación fallida
+            }
+            // Podrías añadir más chequeos para otros tipos de errores (ej. SequelizeValidationError -> 400)
+
+            return res.status(statusCode).json({
                 status: 'error',
-                message: error.message || 'Failed to update activity statuses.'
+                message: error.message // Devolver el mensaje de error específico
             });
         }
     }
-    // --- Fin Nueva función ---
 };
 
 module.exports = scheduleController;
