@@ -1,6 +1,8 @@
 const { Sequelize } = require('sequelize');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
+// Importar el seeder de actividades
+const defaultActivitiesSeeder = require('../seeders/default-activities');
 
 const dbUrl = process.env.DATABASE_URL.includes('hamse') 
     ? process.env.DATABASE_URL 
@@ -35,12 +37,13 @@ const initializeDatabase = async () => {
 
         // Sync without forcing recreation of tables
         await sequelize.sync({ force: false, alter: true });
-        
+        console.log('Database models synchronized.');
+
         // Check if admin exists before creating
         const adminExists = await User.findOne({ where: { username: 'admin' } });
-        
+
         if (!adminExists) {
-            const hashedPassword = await bcrypt.hash('admin123', 8);
+            const hashedPassword = await bcrypt.hash('admin1', 8);
             await User.create({
                 username: 'admin',
                 email: 'admin@hamse.com',
@@ -48,12 +51,27 @@ const initializeDatabase = async () => {
                 role: 'admin'
             });
             console.log('Default admin user created.');
+        } else {
+            console.log('Admin user already exists.');
         }
 
-        console.log('Database synchronized successfully.');
+        // Check if default activities exist before seeding
+        const activityCount = await Activity.count();
+        if (activityCount === 0) {
+            console.log('No activities found, seeding default activities...');
+            // Ejecutar la lógica 'up' del seeder
+            // Pasamos sequelize.getQueryInterface() y Sequelize como argumentos
+            await defaultActivitiesSeeder.up(sequelize.getQueryInterface(), Sequelize);
+            console.log('Default activities seeded successfully.');
+        } else {
+            console.log(`${activityCount} activities already exist, skipping seeding.`);
+        }
+
+
+        console.log('Database initialization complete.');
     } catch (error) {
         console.error('Unable to initialize database:', error);
-        throw error;
+        throw error; // Re-lanzar el error para que la aplicación falle si la inicialización no es exitosa
     }
 };
 
