@@ -34,6 +34,7 @@ const initializeDatabase = async () => {
         const Schedule = require('../models/schedule.model');
         const Status = require('../models/status.model');
         const Report = require('../models/report.model');
+        const Setting = require('../models/setting.model');
 
         // Sync without forcing recreation of tables
         await sequelize.sync({ force: false, alter: true });
@@ -65,6 +66,18 @@ const initializeDatabase = async () => {
             console.log('Default activities seeded successfully.');
         } else {
             console.log(`${activityCount} activities already exist, skipping seeding.`);
+        }
+
+        // Crear configuración por defecto para WhatsApp si no existe
+        const whatsappSetting = await Setting.findByPk('whatsappNumber');
+        if (!whatsappSetting) {
+            await Setting.create({
+                key: 'whatsappNumber',
+                value: process.env.DEFAULT_WHATSAPP_NUMBER || '+1234567890' // Usa una variable de entorno o un valor por defecto seguro
+            });
+            console.log('Default WhatsApp number setting created.');
+        } else {
+            console.log('WhatsApp number setting already exists.');
         }
 
 

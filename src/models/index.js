@@ -3,6 +3,7 @@ const Activity = require('./activity.model');
 const Schedule = require('./schedule.model');
 const Status = require('./status.model');
 const Report = require('./report.model');
+const Setting = require('./setting.model');
 
 // Activity <-> Schedule (Many-to-Many)
 Activity.belongsToMany(Schedule, { through: 'ActivitySchedule' });
@@ -33,5 +34,6 @@ module.exports = {
     Activity,
     Schedule,
     Status,
-    Report
+    Report,
+    Setting
 };
