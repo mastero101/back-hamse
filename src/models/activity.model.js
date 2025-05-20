@@ -14,7 +14,7 @@ const Activity = sequelize.define('Activity', {
         type: Sequelize.TEXT
     },
     frequency: {
-        type: Sequelize.ENUM('weekly', 'monthly'),
+        type: Sequelize.ENUM('daily', 'weekly', 'monthly', 'yearly'),
         allowNull: false
     },
     expectedDuration: {
