@@ -37,17 +37,64 @@ const { verifyToken, isAdmin } = require('../middleware/auth.jwt');
  * @swagger
  * /api/activities:
  *   get:
- *     summary: Get all activities
+ *     summary: Listar todas las actividades con paginación
  *     tags: [Activities]
+ *     parameters:
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           default: 1
+ *         description: Número de página para la paginación.
+ *       - in: query
+ *         name: size
+ *         schema:
+ *           type: integer
+ *           default: 10
+ *         description: Número de actividades por página.
  *     responses:
  *       200:
- *         description: List of activities
+ *         description: Una lista paginada de actividades.
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Activity'
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Actividades recuperadas exitosamente.
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     totalItems:
+ *                       type: integer
+ *                       example: 100
+ *                     items:
+ *                       type: array
+ *                       items:
+ *                         $ref: '#/components/schemas/Activity'
+ *                     totalPages:
+ *                       type: integer
+ *                       example: 10
+ *                     currentPage:
+ *                       type: integer
+ *                       example: 1
+ *       500:
+ *         description: Error del servidor.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Ocurrió un error al recuperar las actividades.
  */
 router.get('/', activityController.findAll);
 
