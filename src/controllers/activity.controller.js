@@ -33,24 +33,31 @@ const activityController = {
 
     // Get all activities with pagination
     findAll: async (req, res) => {
-        const { page, size } = req.query;
+        const { page, size, category } = req.query; // Extraer category de req.query
         const { limit, offset } = getPagination(page, size);
 
         try {
+            const whereClause = {}; // Inicializar cláusula where
+            if (category) {
+                whereClause.category = category; // Añadir filtro de categoría si existe
+            }
+
             const data = await Activity.findAndCountAll({
+                where: whereClause, // Usar la cláusula where
                 limit,
                 offset,
-                include: [{ // Mantenemos el include si es necesario para la lista
+                include: [{
                     model: Status,
-                    attributes: ['state', 'completedAt']
+                    attributes: ['state', 'completedAt'],
+                    required: false // Cambiado a false para que sea un LEFT JOIN y no excluya actividades sin Status
                 }],
-                order: [ // Opcional: añade un orden por defecto
+                order: [
                     ['createdAt', 'DESC']
                 ]
             });
 
             const response = getPagingData(data, page, limit);
-            return res.status(200).json({ // Ajustamos el formato de respuesta para ser consistente
+            return res.status(200).json({
                 success: true,
                 message: 'Actividades recuperadas exitosamente.',
                 data: response
