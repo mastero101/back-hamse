@@ -4,10 +4,11 @@ const Schedule = require('./schedule.model');
 const Status = require('./status.model');
 const Report = require('./report.model');
 const Setting = require('./setting.model');
+const ActivitySchedule = require('./activitySchedule.model');
 
 // Activity <-> Schedule (Many-to-Many)
-Activity.belongsToMany(Schedule, { through: 'ActivitySchedule' });
-Schedule.belongsToMany(Activity, { through: 'ActivitySchedule' });
+Activity.belongsToMany(Schedule, { through: ActivitySchedule, foreignKey: 'activityId' });
+Schedule.belongsToMany(Activity, { through: ActivitySchedule, foreignKey: 'scheduleId' });
 
 // Activity -> Status (One-to-Many)
 Activity.hasMany(Status);
@@ -35,5 +36,6 @@ module.exports = {
     Schedule,
     Status,
     Report,
-    Setting
+    Setting,
+    ActivitySchedule
 };
