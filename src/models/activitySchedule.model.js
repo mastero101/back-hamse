@@ -6,6 +6,14 @@ const ActivitySchedule = sequelize.define('ActivitySchedule', {
         allowNull: true,
         defaultValue: []
     }
+}, {
+    // Añadir la propiedad indexes para crear un índice único compuesto
+    indexes: [
+        {
+            unique: true,
+            fields: ['scheduleId', 'activityId']
+        }
+    ]
 });
 
 module.exports = ActivitySchedule;
