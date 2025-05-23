@@ -41,6 +41,10 @@ const Requirement = sequelize.define('Requirement', {
     dependency: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    reminderDate: {
+        type: Sequelize.DATEONLY,
+        allowNull: true
     }
 });
 

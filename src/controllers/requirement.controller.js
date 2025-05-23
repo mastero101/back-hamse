@@ -40,7 +40,7 @@ const requirementController = {
         try {
             const { id } = req.params;
             const requirement = await Requirement.findByPk(id);
-            
+
             if (!requirement) {
                 return res.status(404).json({
                     status: 'error',
@@ -48,8 +48,16 @@ const requirementController = {
                 });
             }
 
-            await requirement.update(req.body);
-            
+            const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDate'];
+            const updates = {};
+            allowedUpdates.forEach(field => {
+                if (req.body.hasOwnProperty(field)) {
+                    updates[field] = req.body[field];
+                }
+            });
+
+            await requirement.update(updates);
+
             return res.json({
                 status: 'success',
                 data: requirement
