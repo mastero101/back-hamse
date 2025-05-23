@@ -21,6 +21,7 @@ const activityRoutes = require('./routes/activity.routes');
 const scheduleRoutes = require('./routes/schedule.routes');
 const reportRoutes = require('./routes/report.routes');
 const settingsRoutes = require('./routes/settings.routes');
+const requirementRoutes = require('./routes/requirement.routes');
 
 // Routes
 // Función para obtener el uso de memoria
@@ -342,6 +343,7 @@ app.use('/api/activities', activityRoutes);
 app.use('/api/schedules', scheduleRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/settings', settingsRoutes);
+app.use('/api/requirements', requirementRoutes);
 
 const PORT = process.env.PORT || 3000;
 

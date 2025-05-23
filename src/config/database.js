@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs');
 require('dotenv').config();
 // Importar el seeder de actividades
 const defaultActivitiesSeeder = require('../seeders/default-activities');
+// Importar el seeder de requerimientos
+const defaultRequirementsSeeder = require('../seeders/default-requirements');
 
 const dbUrl = process.env.DATABASE_URL.includes('hamse') 
     ? process.env.DATABASE_URL 
@@ -35,6 +37,8 @@ const initializeDatabase = async () => {
         const Status = require('../models/status.model');
         const Report = require('../models/report.model');
         const Setting = require('../models/setting.model');
+        // Importar el modelo Requirement
+        const Requirement = require('../models/requirement.model');
 
         // Sync without forcing recreation of tables
         await sequelize.sync({ force: false, alter: true });
@@ -66,6 +70,17 @@ const initializeDatabase = async () => {
             console.log('Default activities seeded successfully.');
         } else {
             console.log(`${activityCount} activities already exist, skipping seeding.`);
+        }
+
+        // Check if default requirements exist before seeding
+        const requirementCount = await Requirement.count();
+        if (requirementCount === 0) {
+            console.log('No requirements found, seeding default requirements...');
+            // Ejecutar la lógica 'up' del seeder de requerimientos
+            await defaultRequirementsSeeder.up(sequelize.getQueryInterface(), Sequelize);
+            console.log('Default requirements seeded successfully.');
+        } else {
+            console.log(`${requirementCount} requirements already exist, skipping seeding.`);
         }
 
         // Crear configuración por defecto para WhatsApp si no existe
