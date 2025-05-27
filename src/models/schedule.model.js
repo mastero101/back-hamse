@@ -15,7 +15,7 @@ const Schedule = sequelize.define('Schedule', {
         allowNull: false
     },
     type: {
-        type: Sequelize.ENUM('weekly', 'monthly'),
+        type: Sequelize.ENUM('daily', 'weekly', 'monthly', 'yearly'),
         allowNull: false
     },
     status: {

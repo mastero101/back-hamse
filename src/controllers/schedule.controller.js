@@ -1,5 +1,6 @@
 const { Schedule, Activity, Status, User, ActivitySchedule } = require('../models'); // Importar ActivitySchedule
 const { sequelize } = require('../config/database');
+const { Op } = require('sequelize');
 
 const scheduleController = {
     create: async (req, res) => {
@@ -7,6 +8,19 @@ const scheduleController = {
         try {
             console.log('Creating schedule with body:', JSON.stringify(req.body, null, 2));
             const { activities, ...scheduleData } = req.body; // Separar actividades del resto de datos del schedule
+
+            const existing = await Schedule.findOne({
+                where: {
+                    type: req.body.type,
+                    startDate: req.body.startDate,
+                    endDate: req.body.endDate,
+                    assignedTo: req.userId
+                }
+            });
+            if (existing) {
+                // Opcional: devolver el existente o lanzar error
+                return res.status(200).json({ status: 'success', data: existing });
+            }
 
             const schedule = await Schedule.create({
                 ...scheduleData,
@@ -452,8 +466,8 @@ const scheduleController = {
                 // 2. Buscar o crear la entrada en la tabla Status para esta actividad y schedule
                 const [statusEntry, created] = await Status.findOrCreate({
                     where: {
-                        activityId: update.activityId,
-                        scheduleId: scheduleId // Asegurarse de que el estado está vinculado a este schedule
+                        ActivityId: update.activityId,
+                        scheduleId: scheduleId
                     },
                     defaults: {
                         state: update.state,
@@ -579,6 +593,70 @@ const scheduleController = {
             await transaction.rollback(); // Revertir transacción en caso de error
             console.error(`[${new Date().toISOString()}] Error updating activity statuses for schedule ${scheduleId}:`, error);
             return res.status(500).json({ status: 'error', message: error.message || 'Error al actualizar los estados de las actividades.' });
+        }
+    },
+
+    findByDate: async (req, res) => {
+        try {
+            const { type, date } = req.query;
+            const fechaReferencia = new Date(date);
+
+            const schedule = await Schedule.findOne({
+                where: {
+                    type: type,
+                    startDate: { [Op.lte]: fechaReferencia },
+                    endDate: { [Op.gte]: fechaReferencia }
+                },
+                include: [
+                    {
+                        model: Activity,
+                        through: { // Incluir datos de la tabla intermedia
+                            model: ActivitySchedule,
+                            attributes: ['programStates'] // Especificar el campo a incluir
+                        },
+                        include: [{
+                            model: Status,
+                            required: false,
+                            attributes: ['state', 'completedAt', 'notes', 'scheduleId', 'ActivityId']
+                        }]
+                    },
+                    {
+                        model: User,
+                        attributes: ['id', 'username']
+                    }
+                ]
+            });
+
+            if (!schedule) {
+                return res.status(404).json({
+                    status: 'error',
+                    message: 'Schedule not found'
+                });
+            }
+
+            // Formatear la respuesta para incluir programStates directamente en la actividad
+            const plainSchedule = schedule.get({ plain: true });
+            if (plainSchedule.Activities) {
+                plainSchedule.Activities = plainSchedule.Activities.map(activity => {
+                    const programStates = activity.ActivitySchedule ? activity.ActivitySchedule.programStates : [];
+                    delete activity.ActivitySchedule;
+                    return {
+                        ...activity,
+                        programStates: programStates
+                    };
+                });
+            }
+
+            return res.json({
+                status: 'success',
+                data: plainSchedule
+            });
+        } catch (error) {
+            console.error('Error finding schedule by date:', error);
+            return res.status(500).json({
+                status: 'error',
+                message: error.message
+            });
         }
     }
 };
