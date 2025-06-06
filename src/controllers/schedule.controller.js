@@ -235,10 +235,14 @@ const scheduleController = {
                         }, { transaction });
                         console.log(`Updated programStates for Activity ${activityUpdate.id} in Schedule ${schedule.id}`);
                     } else {
-                        // Si la actividad no estaba asociada (caso menos común en una actualización de estados),
-                        // podrías crear una nueva entrada aquí, o lanzar un error si esperas que todas existan.
-                        console.warn(`Activity ${activityUpdate.id} not found in ActivitySchedule for Schedule ${schedule.id}. Skipping update.`);
-                        // Opcional: await ActivitySchedule.create({ scheduleId: schedule.id, activityId: activityUpdate.id, programStates: activityUpdate.checkedWeeks || [] }, { transaction });
+                        // Si la actividad no estaba asociada, crear una nueva entrada en ActivitySchedule
+                        console.warn(`Activity ${activityUpdate.id} not found in ActivitySchedule for Schedule ${schedule.id}. Creating a new entry.`);
+                        await ActivitySchedule.create({
+                            scheduleId: schedule.id,
+                            activityId: activityUpdate.id,
+                            programStates: activityUpdate.checkedWeeks || activityUpdate.programStates || []
+                        }, { transaction });
+                         console.log(`Created new ActivitySchedule entry for Activity ${activityUpdate.id} in Schedule ${schedule.id}`);
                     }
                 });
 
