@@ -51,3 +51,6 @@ temp/
 # Debug files
 .debug
 .vercel
+
+# Ignorar el archivo de usuarios importados
+src/scripts/usuarios_2025.csv
