@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const requirementController = require('../controllers/requirement.controller');
 const { verifyToken } = require('../middleware/auth.jwt');
+const multer = require('multer');
+const upload = multer({ storage: multer.memoryStorage() });
 
 /**
  * @swagger
@@ -112,5 +114,7 @@ router.post('/', requirementController.createRequirement);
  *         description: Requerimiento no encontrado
  */
 router.put('/:id', requirementController.updateRequirement);
+
+router.post('/:id/respaldo', upload.single('file'), requirementController.uploadRespaldoS3);
 
 module.exports = router;
