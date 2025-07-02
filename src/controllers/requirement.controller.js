@@ -95,8 +95,7 @@ const requirementController = {
                 Bucket: S3_BUCKET,
                 Key: `respaldos/${Date.now()}_${file.originalname}`,
                 Body: file.buffer,
-                ContentType: file.mimetype,
-                ACL: 'public-read' // O 'private' según tu necesidad
+                ContentType: file.mimetype
             };
 
             const uploadResult = await s3.upload(s3Params).promise();
