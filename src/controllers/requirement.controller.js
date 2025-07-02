@@ -86,20 +86,18 @@ const requirementController = {
             const nota = req.body.nota || '';
             const file = req.file;
 
-            if (!file) {
-                return res.status(400).json({ status: 'error', message: 'Archivo requerido.' });
+            let fileUrl = '';
+            if (file) {
+                // 1. Subir archivo a S3
+                const s3Params = {
+                    Bucket: S3_BUCKET,
+                    Key: `respaldos/${Date.now()}_${file.originalname}`,
+                    Body: file.buffer,
+                    ContentType: file.mimetype
+                };
+                const uploadResult = await s3.upload(s3Params).promise();
+                fileUrl = uploadResult.Location;
             }
-
-            // 1. Subir archivo a S3
-            const s3Params = {
-                Bucket: S3_BUCKET,
-                Key: `respaldos/${Date.now()}_${file.originalname}`,
-                Body: file.buffer,
-                ContentType: file.mimetype
-            };
-
-            const uploadResult = await s3.upload(s3Params).promise();
-            const fileUrl = uploadResult.Location;
 
             // 2. Actualizar el campo respaldo
             const respaldo = JSON.stringify({ url: fileUrl, nota });
