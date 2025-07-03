@@ -18,9 +18,10 @@ const requirementController = {
             
             const requirements = await Requirement.findAll({ where });
 
-            // Procesar reminderDates para devolverlo como array
+            // Procesar reminderDates y providers para devolverlos como array
             const processedRequirements = requirements.map(req => {
                 const data = req.toJSON();
+                // reminderDates
                 if (data.reminderDates) {
                     try {
                         data.reminderDates = JSON.parse(data.reminderDates);
@@ -29,6 +30,16 @@ const requirementController = {
                     }
                 } else {
                     data.reminderDates = [];
+                }
+                // providers
+                if (data.providers) {
+                    try {
+                        data.providers = JSON.parse(data.providers);
+                    } catch {
+                        data.providers = [];
+                    }
+                } else {
+                    data.providers = [];
                 }
                 return data;
             });
@@ -73,12 +84,14 @@ const requirementController = {
                 });
             }
 
-            const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDates'];
+            const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDates', 'providers'];
             const updates = {};
             allowedUpdates.forEach(field => {
                 if (req.body.hasOwnProperty(field)) {
                     if (field === 'reminderDates' && Array.isArray(req.body.reminderDates)) {
                         updates.reminderDates = JSON.stringify(req.body.reminderDates);
+                    } else if (field === 'providers' && Array.isArray(req.body.providers)) {
+                        updates.providers = JSON.stringify(req.body.providers);
                     } else {
                         updates[field] = req.body[field];
                     }
@@ -87,7 +100,7 @@ const requirementController = {
 
             await requirement.update(updates);
 
-            // Procesar reminderDates para devolverlo como array
+            // Procesar reminderDates y providers para devolverlos como array
             const data = requirement.toJSON();
             if (data.reminderDates) {
                 try {
@@ -97,6 +110,15 @@ const requirementController = {
                 }
             } else {
                 data.reminderDates = [];
+            }
+            if (data.providers) {
+                try {
+                    data.providers = JSON.parse(data.providers);
+                } catch {
+                    data.providers = [];
+                }
+            } else {
+                data.providers = [];
             }
 
             return res.json({

@@ -49,6 +49,10 @@ const Requirement = sequelize.define('Requirement', {
     respaldo: {
         type: Sequelize.TEXT,
         allowNull: true
+    },
+    providers: {
+        type: Sequelize.TEXT,
+        allowNull: true
     }
 });
 
