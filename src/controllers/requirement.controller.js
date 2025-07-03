@@ -17,10 +17,25 @@ const requirementController = {
             const where = dependency ? { dependency } : {};
             
             const requirements = await Requirement.findAll({ where });
+
+            // Procesar reminderDates para devolverlo como array
+            const processedRequirements = requirements.map(req => {
+                const data = req.toJSON();
+                if (data.reminderDates) {
+                    try {
+                        data.reminderDates = JSON.parse(data.reminderDates);
+                    } catch {
+                        data.reminderDates = [];
+                    }
+                } else {
+                    data.reminderDates = [];
+                }
+                return data;
+            });
             
             return res.json({
                 status: 'success',
-                data: requirements
+                data: processedRequirements
             });
         } catch (error) {
             return res.status(500).json({
@@ -58,19 +73,35 @@ const requirementController = {
                 });
             }
 
-            const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDate'];
+            const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDates'];
             const updates = {};
             allowedUpdates.forEach(field => {
                 if (req.body.hasOwnProperty(field)) {
-                    updates[field] = req.body[field];
+                    if (field === 'reminderDates' && Array.isArray(req.body.reminderDates)) {
+                        updates.reminderDates = JSON.stringify(req.body.reminderDates);
+                    } else {
+                        updates[field] = req.body[field];
+                    }
                 }
             });
 
             await requirement.update(updates);
 
+            // Procesar reminderDates para devolverlo como array
+            const data = requirement.toJSON();
+            if (data.reminderDates) {
+                try {
+                    data.reminderDates = JSON.parse(data.reminderDates);
+                } catch {
+                    data.reminderDates = [];
+                }
+            } else {
+                data.reminderDates = [];
+            }
+
             return res.json({
                 status: 'success',
-                data: requirement
+                data
             });
         } catch (error) {
             return res.status(500).json({

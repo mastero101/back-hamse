@@ -42,8 +42,8 @@ const Requirement = sequelize.define('Requirement', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    reminderDate: {
-        type: Sequelize.DATEONLY,
+    reminderDates: {
+        type: Sequelize.TEXT,
         allowNull: true
     },
     respaldo: {
