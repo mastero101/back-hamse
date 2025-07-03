@@ -5,6 +5,8 @@ require('dotenv').config();
 const defaultActivitiesSeeder = require('../seeders/default-activities');
 // Importar el seeder de requerimientos
 const defaultRequirementsSeeder = require('../seeders/default-requirements');
+// Importar el seeder de productos
+const defaultProductsSeeder = require('../seeders/default-products');
 
 const dbUrl = process.env.DATABASE_URL.includes('hamse') 
     ? process.env.DATABASE_URL 
@@ -39,6 +41,8 @@ const initializeDatabase = async () => {
         const Setting = require('../models/setting.model');
         // Importar el modelo Requirement
         const Requirement = require('../models/requirement.model');
+        // Importar el modelo Product
+        const Product = require('../models/product.model');
 
         // Sync without forcing recreation of tables
         await sequelize.sync({ force: false, alter: true });
@@ -95,6 +99,15 @@ const initializeDatabase = async () => {
             console.log('WhatsApp number setting already exists.');
         }
 
+        // Check if default products exist before seeding
+        const productCount = await Product.count();
+        if (productCount === 0) {
+            console.log('No products found, seeding default products...');
+            await defaultProductsSeeder.up(sequelize.getQueryInterface(), Sequelize);
+            console.log('Default products seeded successfully.');
+        } else {
+            console.log(`${productCount} products already exist, skipping seeding.`);
+        }
 
         console.log('Database initialization complete.');
     } catch (error) {

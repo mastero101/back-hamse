@@ -21,6 +21,32 @@ const options = {
                     scheme: 'bearer',
                     bearerFormat: 'JWT',
                 }
+            },
+            schemas: {
+                Product: {
+                    type: 'object',
+                    properties: {
+                        id: { type: 'integer', example: 1 },
+                        name: { type: 'string', example: 'Aceite 10W40' },
+                        description: { type: 'string', example: 'Aceite sintético para motor' },
+                        price: { type: 'number', example: 199.99 },
+                        stock: { type: 'integer', example: 50 },
+                        url: { type: 'string', example: 'https://ejemplo.com/producto.jpg' },
+                        createdAt: { type: 'string', format: 'date-time' },
+                        updatedAt: { type: 'string', format: 'date-time' }
+                    }
+                },
+                ProductInput: {
+                    type: 'object',
+                    properties: {
+                        name: { type: 'string', example: 'Aceite 10W40' },
+                        description: { type: 'string', example: 'Aceite sintético para motor' },
+                        price: { type: 'number', example: 199.99 },
+                        stock: { type: 'integer', example: 50 },
+                        url: { type: 'string', example: 'https://ejemplo.com/producto.jpg' }
+                    },
+                    required: ['name', 'price', 'stock']
+                }
             }
         }
     },

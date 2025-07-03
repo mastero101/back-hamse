@@ -1,0 +1,5626 @@
+[
+  {
+    "id": "1",
+    "name": "Tratamiento Para Gasolina",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "38.89",
+    "enlace": "NULL"
+  },
+  {
+    "id": "2",
+    "name": "Limpiador de Inyectores",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "53.66",
+    "enlace": "NULL"
+  },
+  {
+    "id": "3",
+    "name": "Incrementador de Octanaje",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "61.39",
+    "enlace": "NULL"
+  },
+  {
+    "id": "4",
+    "name": "Direccion Hidraulica",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "31.77",
+    "enlace": "NULL"
+  },
+  {
+    "id": "5",
+    "name": "Power Rider 2T J-FB",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "44.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "6",
+    "name": "Liquido de Frenos",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "40.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "7",
+    "name": "Liquido de Frenos",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.09",
+    "enlace": "NULL"
+  },
+  {
+    "id": "8",
+    "name": "Liquido Limpiaparabrisas Concentrado",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "36.33",
+    "enlace": "NULL"
+  },
+  {
+    "id": "9",
+    "name": "FULL PRO ARRANCADOR",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "69.12",
+    "enlace": "NULL"
+  },
+  {
+    "id": "10",
+    "name": "FULL PRO LIMPIA PARABRISAS 946ML",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "44.09",
+    "enlace": "NULL"
+  },
+  {
+    "id": "11",
+    "name": "Anticongelante concentracion Ideal",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "32.19",
+    "enlace": "NULL"
+  },
+  {
+    "id": "12",
+    "name": "Anticongelante concentracion Ideal",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "98.97",
+    "enlace": "NULL"
+  },
+  {
+    "id": "13",
+    "name": "Anticongelante concentracion Optima",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "57.63",
+    "enlace": "NULL"
+  },
+  {
+    "id": "14",
+    "name": "Anticongelante concentracion Optima",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "205.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "15",
+    "name": "HD 40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "83.19",
+    "enlace": "NULL"
+  },
+  {
+    "id": "16",
+    "name": "HD 50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "83.19",
+    "enlace": "NULL"
+  },
+  {
+    "id": "17",
+    "name": "HD 60",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "83.19",
+    "enlace": "NULL"
+  },
+  {
+    "id": "18",
+    "name": "QS. ALTO KILOMETRAJE SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "95.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "19",
+    "name": "QS. ALTO KILOMETRAJE SAE 20W-60",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "95.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "20",
+    "name": "QS. ALTO KILOMETRAJE SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "96.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "21",
+    "name": "XTR PRO SAE 5W20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "22",
+    "name": "XTR PRO SAE 5W30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "23",
+    "name": "XTR PRO SAE 10W30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "24",
+    "name": "XTR PRO SAE 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "25",
+    "name": "XTR PRO SAE 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "117.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "26",
+    "name": "QS POWER RIDER 2T J-FB",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "126.59",
+    "enlace": "NULL"
+  },
+  {
+    "id": "27",
+    "name": "Power Rider 4T",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "121.78",
+    "enlace": "NULL"
+  },
+  {
+    "id": "28",
+    "name": "HD 40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "412.68",
+    "enlace": "NULL"
+  },
+  {
+    "id": "29",
+    "name": "HD 50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "412.68",
+    "enlace": "NULL"
+  },
+  {
+    "id": "30",
+    "name": "HD 60",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "412.68",
+    "enlace": "NULL"
+  },
+  {
+    "id": "31",
+    "name": "QS. ALTO KILOMETRAJE SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "475.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "32",
+    "name": "QS. ALTO KILOMETRAJE SAE 20W-60",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "475.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "33",
+    "name": "QS. ALTO KILOMETRAJE SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "575.37",
+    "enlace": "NULL"
+  },
+  {
+    "id": "34",
+    "name": "XTR PRO SAE 5W20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "570.71",
+    "enlace": "NULL"
+  },
+  {
+    "id": "35",
+    "name": "XTR PRO SAE 10W30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "570.82",
+    "enlace": "NULL"
+  },
+  {
+    "id": "36",
+    "name": "XTR PRO SAE 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "627.93",
+    "enlace": "NULL"
+  },
+  {
+    "id": "37",
+    "name": "XTR PRO SAE 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "627.93",
+    "enlace": "NULL"
+  },
+  {
+    "id": "38",
+    "name": "AK PRO 10W30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "104.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "39",
+    "name": "AK PRO 10W30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "498",
+    "enlace": "NULL"
+  },
+  {
+    "id": "40",
+    "name": "AK PRO 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "104.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "41",
+    "name": "AK PRO 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "498",
+    "enlace": "NULL"
+  },
+  {
+    "id": "42",
+    "name": "QS Series III Sae 40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "70.57",
+    "enlace": "NULL"
+  },
+  {
+    "id": "43",
+    "name": "QS Series III Sae 40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "352.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "44",
+    "name": "QS Series III Sae 50 CF",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "70.57",
+    "enlace": "NULL"
+  },
+  {
+    "id": "45",
+    "name": "QS Series III Sae 50 CF",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "352.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "46",
+    "name": "Maxima Viscocidad 25W50 CF-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "95.74",
+    "enlace": "NULL"
+  },
+  {
+    "id": "47",
+    "name": "Maxima Viscocidad 25W50 CF-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "474.63",
+    "enlace": "NULL"
+  },
+  {
+    "id": "48",
+    "name": "QS POWER BOAT 2T TC-W3",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "180.72",
+    "enlace": "NULL"
+  },
+  {
+    "id": "49",
+    "name": "QS POWER BOAT-4T 10W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "141.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "50",
+    "name": "QS Quadromatic",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "81.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "51",
+    "name": "QS Quadromatic",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.73",
+    "enlace": "NULL"
+  },
+  {
+    "id": "52",
+    "name": "Dexron III",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "81.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "53",
+    "name": "Dexron III",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "54",
+    "name": "ATF ALTO KILOMETRAJE Tipo D-II",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "81.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "55",
+    "name": "ATF ALTO KILOMETRAJE Tipo D-II",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "56",
+    "name": "GREEN OIL TRANSPOWER SAE 90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "81.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "57",
+    "name": "GREEN OIL TRANSPOWER SAE 90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "58",
+    "name": "GREEN OIL 140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "81.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "59",
+    "name": "GREEN OIL 140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "60",
+    "name": "GREEN OIL 250",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "95.31",
+    "enlace": "NULL"
+  },
+  {
+    "id": "61",
+    "name": "GREEN OIL 250",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "455.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "62",
+    "name": "SUPER QUADROLUBE 85W140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "97.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "63",
+    "name": "SUPER QUADROLUBE 80W90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "97.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "64",
+    "name": "FILTRO P/ACEITE QS 173",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "76.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "65",
+    "name": "FILTRO P/ACEITE QS 5",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "76.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "66",
+    "name": "FILTRO P/ACEITE QS 8-A",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "76.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "67",
+    "name": "FILTRO P/ACEITE QS 2825",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "87.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "68",
+    "name": "FILTRO P/ACEITE QS 2870-A",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "78.73",
+    "enlace": "NULL"
+  },
+  {
+    "id": "69",
+    "name": "FILTRO P/ACEITE QS 3387-A",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "74.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "70",
+    "name": "FILTRO P/ACEITE QS 3600",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "74.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "71",
+    "name": "FILTRO P/ACEITE QS 3614",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "74.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "72",
+    "name": "FILTRO P/ACEITE QS 3682",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "80.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "73",
+    "name": "FILTRO P/ACEITE QS 3980",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "74.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "74",
+    "name": "FILTRO P/ACEITE QS 14612",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "74.32",
+    "enlace": "NULL"
+  },
+  {
+    "id": "75",
+    "name": "RACING OIL 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "552.64",
+    "enlace": "NULL"
+  },
+  {
+    "id": "76",
+    "name": "RACING OIL 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "114.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "77",
+    "name": "RACING TECH SAE 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "17215.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "78",
+    "name": "QS. ALTO KILOMETRAJE SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "2007.36",
+    "enlace": "NULL"
+  },
+  {
+    "id": "79",
+    "name": "QS. ALTO KILOMETRAJE SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "16370.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "80",
+    "name": "AK AUTOS 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "394.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "81",
+    "name": "AK AUTOS 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "79.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "82",
+    "name": "AK AUTOS 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "16441.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "83",
+    "name": "XTR PRO SAE 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "21324.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "84",
+    "name": "QS XTR PRO SAE 20W50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "21324.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "85",
+    "name": "ULTRA HEAVY DUTY 15W-40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "479.87",
+    "enlace": "NULL"
+  },
+  {
+    "id": "86",
+    "name": "ULTRA HEAVY DUTY 15W-40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "96.73",
+    "enlace": "NULL"
+  },
+  {
+    "id": "87",
+    "name": "ULTRA HD 15W40",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15610.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "88",
+    "name": "ULTIMATE DURAB 100% SIN 5W30 Caja5Bot 946 ml",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "0",
+    "enlace": "NULL"
+  },
+  {
+    "id": "89",
+    "name": "SERIES III  SAE 40 CF*",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1215.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "90",
+    "name": "SERIES III  SAE 50 CF*",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1215.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "91",
+    "name": "QS SERIES III 15W40 CF",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1331.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "93",
+    "name": "QS SERIES III 15W40 CF",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15817.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "94",
+    "name": "SUPER SERIES III PLUS SAE 15W40 API CI-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1671.67",
+    "enlace": "NULL"
+  },
+  {
+    "id": "95",
+    "name": "SUPER SERIES III PLUS SAE 15W40 API CI-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "18673.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "96",
+    "name": "DuraTrack SAE 15W40 API CK4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1548.62",
+    "enlace": "NULL"
+  },
+  {
+    "id": "97",
+    "name": "MAXIMA VISCOSIDAD 15W40 API CF-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1458.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "98",
+    "name": "MAXIMA VISCOSIDAD 25W50 API CF-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1442.66",
+    "enlace": "NULL"
+  },
+  {
+    "id": "99",
+    "name": "MAXIMA VISCOSIDAD 25W50 API CF-4",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15817.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "100",
+    "name": "TRANSMISION AUTOMATICA TIPO D-III",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1586.74",
+    "enlace": "NULL"
+  },
+  {
+    "id": "101",
+    "name": "TRANSMISION AUTOMATICA TIPO D-III",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15895.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "102",
+    "name": "QS MULTI VEHICULO MERCON V",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "161.16",
+    "enlace": "NULL"
+  },
+  {
+    "id": "103",
+    "name": "SUPER QUADROLUBE 85W140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "2019.77",
+    "enlace": "NULL"
+  },
+  {
+    "id": "104",
+    "name": "SUPER QUADROLUBE 80W90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1983.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "105",
+    "name": "GREEN OIL TRANSPOWER SAE 90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1290.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "107",
+    "name": "GREEN OIL TRANSPOWER SAE 90",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15895.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "108",
+    "name": "GREEN OIL 140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "390.76",
+    "enlace": "NULL"
+  },
+  {
+    "id": "109",
+    "name": "GREEN OIL 140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1290.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "110",
+    "name": "GREEN OIL 140",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "15895.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "111",
+    "name": "GREEN OIL 250",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1803.27",
+    "enlace": "NULL"
+  },
+  {
+    "id": "112",
+    "name": "QS. HIDRAULICO SAE 68",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1019.54",
+    "enlace": "NULL"
+  },
+  {
+    "id": "113",
+    "name": "QS. HIDRAULICO SAE 68",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "11492.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "114",
+    "name": "H-300 AW 68*",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "391.54",
+    "enlace": "NULL"
+  },
+  {
+    "id": "115",
+    "name": "H-300 AW 68*",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1097.96",
+    "enlace": "NULL"
+  },
+  {
+    "id": "116",
+    "name": "H-300 AW 68*",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "11738.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "117",
+    "name": "GRASA GOLDEN CHASSIS",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "377.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "118",
+    "name": "GRASA CHASSIS AZUL",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1453.07",
+    "enlace": "NULL"
+  },
+  {
+    "id": "119",
+    "name": "GRASA MULTIPURPOSE COMP. EP 2 / BALEROS Y RODAMIENTOS",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "543.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "120",
+    "name": "Full Synthetic PRO 0W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "211.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "121",
+    "name": "Full Synthetic PRO 0W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1163.96",
+    "enlace": "NULL"
+  },
+  {
+    "id": "122",
+    "name": "Full Synthetic PRO 0W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1070.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "123",
+    "name": "Full Synthetic PRO 5W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "211.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "124",
+    "name": "Full Synthetic PRO 5W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1163.96",
+    "enlace": "NULL"
+  },
+  {
+    "id": "125",
+    "name": "Full Synthetic PRO 5W-20",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1070.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "126",
+    "name": "Full Synthetic PRO 5W-30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "211.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "127",
+    "name": "Full Synthetic PRO 5W-30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1163.96",
+    "enlace": "NULL"
+  },
+  {
+    "id": "128",
+    "name": "Full Synthetic PRO 5W-30",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1070.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "129",
+    "name": "Full Synthetic PRO 5W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "211.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "130",
+    "name": "Full Synthetic PRO 5W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1163.96",
+    "enlace": "NULL"
+  },
+  {
+    "id": "131",
+    "name": "Full Synthetic PRO 5W-50",
+    "descripcion": "NULL",
+    "supplier": "Quaker",
+    "price": "1070.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "132",
+    "name": "Bardahl 1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "61.43",
+    "enlace": "NULL"
+  },
+  {
+    "id": "133",
+    "name": "Bardahl 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "61.43",
+    "enlace": "NULL"
+  },
+  {
+    "id": "134",
+    "name": "Bardahl 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "121.58",
+    "enlace": "NULL"
+  },
+  {
+    "id": "135",
+    "name": "Bardahl Bital",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "69.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "136",
+    "name": "Bardahl Special Duty",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "109.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "137",
+    "name": "BARDAHL Top Oil Limpieza Contínua",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "22.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "138",
+    "name": "BARDAHL Top Oil Limpieza Profunda NANOX",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "48.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "139",
+    "name": "BARDAHL Top Oil Aumenta la Potencia NANOX",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "45.98",
+    "enlace": "NULL"
+  },
+  {
+    "id": "140",
+    "name": "BARDAHL Top Oil Total NANOX",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "126.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "141",
+    "name": "BARDAHL Aditivo para Diesel",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "55.88",
+    "enlace": "NULL"
+  },
+  {
+    "id": "142",
+    "name": "BARDAHL Top Oil Diesel",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "124.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "143",
+    "name": "BARDAHL Liquido para Frenos, DOT-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "34.58",
+    "enlace": "NULL"
+  },
+  {
+    "id": "144",
+    "name": "BARDAHL Liquido para Frenos, DOT-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "85.54",
+    "enlace": "NULL"
+  },
+  {
+    "id": "145",
+    "name": "BARDAHL Liquido para Frenos, DOT-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "53.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "146",
+    "name": "BARDAHL Liquido para Frenos, DOT-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "132.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "147",
+    "name": "BARDAHL Anticongelante Concentrado",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "52.84",
+    "enlace": "NULL"
+  },
+  {
+    "id": "148",
+    "name": "BARDAHL Anticongelante Concentrado",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "192.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "149",
+    "name": "ANTICONGELANTE BARDAHL 50/50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "43.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "150",
+    "name": "ANTICONGELANTE BARDAHL 50/50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "164.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "151",
+    "name": "BARDAHL Anticongelante Coolant",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "35.66",
+    "enlace": "NULL"
+  },
+  {
+    "id": "152",
+    "name": "BARDAHL Anticongelante Coolant",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "134.33",
+    "enlace": "NULL"
+  },
+  {
+    "id": "153",
+    "name": "BARDAHL Anticongelante Coolant Inteligente Nanox",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "40.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "154",
+    "name": "BARDAHL Anticongelante Coolant Inteligente Nanox",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "151.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "155",
+    "name": "BARDAHL Anticongelante Climatizado",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "28.88",
+    "enlace": "NULL"
+  },
+  {
+    "id": "156",
+    "name": "BARDAHL Anticongelante Climatizado",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "109.01",
+    "enlace": "NULL"
+  },
+  {
+    "id": "157",
+    "name": "BARDAHL Dirección Hidráulica",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "33.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "158",
+    "name": "BARDAHL Líquido para Batería",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "8.51",
+    "enlace": "NULL"
+  },
+  {
+    "id": "159",
+    "name": "BARDAHL Arrancador",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "59.59",
+    "enlace": "NULL"
+  },
+  {
+    "id": "160",
+    "name": "BARDAHL Limpia parabrisas Anti-Lluvia, Anti-Insectos",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "35.78",
+    "enlace": "NULL"
+  },
+  {
+    "id": "161",
+    "name": "BARDAHL ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "82.58",
+    "enlace": "NULL"
+  },
+  {
+    "id": "162",
+    "name": "BARDAHL F-1 Sintético, Autos Nuevos 5W30 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "140.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "163",
+    "name": "BARDAHL F-1 Sintético, Autos Nuevos 5W30 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "666.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "164",
+    "name": "BARDAHL para Ahorro de Gasolina 10W30 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "90.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "165",
+    "name": "BARDAHL para Ahorro de Gasolina 10W30 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "430.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "166",
+    "name": "BARDAHL Fusión 16,000 KM, 15W40 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "167",
+    "name": "BARDAHL Fusión 16,000 KM, 15W40 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "446.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "168",
+    "name": "BARDAHL Fusión 16,000 KM, 20W50 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "169",
+    "name": "BARDAHL Fusión 16,000 KM, 20W50 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "446.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "170",
+    "name": "BARDAHL Fusión, 16,000 KM, 25W50 SN , más de 100 000 KM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "171",
+    "name": "BARDAHL Fusión, 16,000 KM, 25W50 SN , más de 100 000 KM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "446.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "172",
+    "name": "BARDAHL SUPER RACING OIL 15W 40 SL, 946 ML, DOYPACK",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "173",
+    "name": "BARDAHL SUPER RACING OIL, 15W40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "90.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "174",
+    "name": "BARDAHL SUPER RACING OIL 20W 50 SL, 946 ML,  DOYPACK",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "175",
+    "name": "BARDAHL SUPER RACING OIL, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "90.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "177",
+    "name": "BARDAHL PARA MAS DE 100 000 KM 25W50 SL DOY PACK",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "178",
+    "name": "BARDAHL más de 100 000 KM 25W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "90.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "179",
+    "name": "BARDAHL más de 100 000 KM 25W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "432.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "180",
+    "name": "BARDAHL BIOS SAE 40 API SL  946 ML BRICK POUCH",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "85.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "181",
+    "name": "BARDAHL Heavy Duty 40 SL Doy Pack",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "85.61",
+    "enlace": "NULL"
+  },
+  {
+    "id": "182",
+    "name": "BARDAHL HEAVY DUTY, 40 SL, 946 ML",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "89.51",
+    "enlace": "NULL"
+  },
+  {
+    "id": "183",
+    "name": "Bardahl Motos 2T   JASO  FB",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "29.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "184",
+    "name": "Bardahl Motos 2 Tiempos Jaso FB",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "89.89",
+    "enlace": "NULL"
+  },
+  {
+    "id": "185",
+    "name": "Bardahl Motos 4T Jaso MA2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "88.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "186",
+    "name": "Bardahl Scooters 4T Jaso MB",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "88.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "187",
+    "name": "Bardahl Náutico 2T TC-W3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "101.06",
+    "enlace": "NULL"
+  },
+  {
+    "id": "191",
+    "name": "MEXLUB MR, SAE 40 API SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "354.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "193",
+    "name": "MEXLUB MR, SAE 50 API SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "354.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "195",
+    "name": "MEXLUB Diesel, 40 CF/CF-2, Series 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "424.88",
+    "enlace": "NULL"
+  },
+  {
+    "id": "197",
+    "name": "MEXLUB Diesel, 50 CF/CF-2, Series 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "424.88",
+    "enlace": "NULL"
+  },
+  {
+    "id": "198",
+    "name": "'BARDAHL TOP G - III",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "579",
+    "enlace": "NULL"
+  },
+  {
+    "id": "199",
+    "name": "BARDAHL TOP G - III",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "33086.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "200",
+    "name": "BARDAHL ANTICONGELANTE CONCENTRADO",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "826.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "201",
+    "name": "BARDAHL ANTICONGELANTE CONCENTRADO",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "8354.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "202",
+    "name": "BARDAHL ANTICONGELANTE COOLANT",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "582.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "203",
+    "name": "BARDAHL ANTICONGELANTE COOLANT",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "5884.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "204",
+    "name": "BARDAHL ANTICONGELANTE COOLANT INTELIGENTE",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "719.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "205",
+    "name": "BARDAHL ANTICONGELANTE COOLANT INTELIGENTE",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "6349.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "206",
+    "name": "BARDAHL ANTICONGELANTE CONCENTRADO HEAVY DUTY",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1259.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "207",
+    "name": "BARDAHL ANTICONGELANTE CONCENTRADO HEAVY DUTY",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12735.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "208",
+    "name": "BARDAHL ANTICONGELANTE COOLANT HEAVY DUTY",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "767.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "209",
+    "name": "BARDAHL ANTICONGELANTE COOLANT HEAVY DUTY",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "7756.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "210",
+    "name": "BARDAHL ANTICONGELANTE COOLANT HEAVY DUTY",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "37239.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "211",
+    "name": "BARDAHL DIRECCIÓN HIDRÁULICA",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "212",
+    "name": "BARDAHL ADITIVO PARA RADIADOR",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "29.33",
+    "enlace": "NULL"
+  },
+  {
+    "id": "213",
+    "name": "BARDAHL PRESIÓN EXTREMA",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "36.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "214",
+    "name": "BARDAHL ADITIVO PARA TRANSMISIÓN AUTOMÁTICA",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "56.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "215",
+    "name": "BARDAHL WB-50 FUSIÓN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "53.44",
+    "enlace": "NULL"
+  },
+  {
+    "id": "216",
+    "name": "BARDAHL WB-50 FUSIÓN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "217",
+    "name": "BARDAHL DESINFECTANTE MULTIUSOS CONCENTRADO",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "229.09",
+    "enlace": "NULL"
+  },
+  {
+    "id": "218",
+    "name": "BARDAHL DESINFECTANTE MULTIUSOS LISTO PARA USARSE",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "63",
+    "enlace": "NULL"
+  },
+  {
+    "id": "219",
+    "name": "BARDAHL ABRILLANTA",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "67.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "220",
+    "name": "BARDAHL CERA LÍQUIDA",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "32.51",
+    "enlace": "NULL"
+  },
+  {
+    "id": "221",
+    "name": "BARDAHL QUITA MANCHAS",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "45.11",
+    "enlace": "NULL"
+  },
+  {
+    "id": "222",
+    "name": "BARDAHL QUITA MANCHAS",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "771.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "223",
+    "name": "BARDAHL QUITA MANCHAS",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "7628.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "224",
+    "name": "BARDAHL SOLUCIÓN TOTAL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "59.06",
+    "enlace": "NULL"
+  },
+  {
+    "id": "225",
+    "name": "BARDAHL CLEAN AIR",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "389.06",
+    "enlace": "NULL"
+  },
+  {
+    "id": "226",
+    "name": "BARDAHL CLEAN AIR",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "3459.81",
+    "enlace": "NULL"
+  },
+  {
+    "id": "227",
+    "name": "BARDAHL CLEAN AIR",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "16276.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "228",
+    "name": "BARDAHL ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1438.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "229",
+    "name": "BARDAHL ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14672.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "230",
+    "name": "BARDAHL ATF UNIVERSAL FULLY SYN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "3783.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "252",
+    "name": "BARDAHL GEAR OIL, 80W90 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1509.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "253",
+    "name": "BARDAHL GEAR OIL, 80W90 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15866.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "254",
+    "name": "BARDAHL GEAR OIL, 85W140 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1509.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "255",
+    "name": "BARDAHL GEAR OIL, 85W140 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15866.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "256",
+    "name": "BARDAHL GEAR OIL FULLY SYN, 75W90 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "5291.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "257",
+    "name": "BARDAHL GEAR OIL FULLY SYN, 80W140 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "5291.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "258",
+    "name": "BARDAHL GEAR OIL, 90 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1383.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "259",
+    "name": "BARDAHL GEAR OIL, 90 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14542.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "260",
+    "name": "BARDAHL GEAR OIL, 140 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1383.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "261",
+    "name": "BARDAHL GEAR OIL, 140 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14542.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "262",
+    "name": "BARDAHL GEAR OIL, 250 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1383.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "263",
+    "name": "BARDAHL GEAR OIL, 250 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14542.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "264",
+    "name": "BARDAHL FORMULA-1 SINTÉTICO, 5W30 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "23468.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "265",
+    "name": "BARDAHL FUSIÓN 16,000 KM, 20W50 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1539.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "266",
+    "name": "BARDAHL FUSIÓN 16,000 KM, 20W50 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15669.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "267",
+    "name": "BARDAHL SUPER RACING OIL, 15W40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1262.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "268",
+    "name": "BARDAHL SUPER RACING OIL, 15W40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "13278.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "269",
+    "name": "BARDAHL SUPER RACING OIL, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1262.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "270",
+    "name": "BARDAHL SUPER RACING OIL, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "13278.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "271",
+    "name": "BARDAHL PARA MÁS DE 100,000 KM, 25W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "13278.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "272",
+    "name": "BARDAHL NAUTICO SUPER BIA TC-W3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1657.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "273",
+    "name": "BARDAHL NAUTICO SUPER BIA TC-W3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "17672.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "274",
+    "name": "BARDAHL EURO DIESEL OIL SYN 10W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "2100",
+    "enlace": "NULL"
+  },
+  {
+    "id": "275",
+    "name": "BARDAHL DIESEL OIL FULLY SYN, 15W40 CJ-4/SM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "19758.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "278",
+    "name": "BARDAHL DIESEL OIL, 15W40 CK-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1609.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "279",
+    "name": "BARDAHL SUPER DIESEL OIL,15W40 CJ-4/SM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1403.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "280",
+    "name": "BARDAHL SUPER DIESEL OIL,15W40 CJ-4/SM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14748.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "281",
+    "name": "BARDAHL FUSIÓN DIESEL, 15W40 CI-4 PLUS PREMIUM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1755.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "282",
+    "name": "BARDAHL FUSIÓN DIESEL, 15W40 CI-4 PLUS PREMIUM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "16756.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "283",
+    "name": "BARDAHL FUSIÓN DIESEL, 15W40 CI-4 PLUS PREMIUM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "77315.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "284",
+    "name": "BARDAHL SUPER DIESEL OIL, 15W40 CI-4 PLUS",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1552.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "285",
+    "name": "BARDAHL SUPER DIESEL OIL, 15W40 CI-4 PLUS",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "16317.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "286",
+    "name": "BARDAHL SUPER DIESEL OIL MB-3, 15W40 CI-4/SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1483.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "287",
+    "name": "BARDAHL SUPER DIESEL OIL MB-3, 15W40 CI-4/SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15596",
+    "enlace": "NULL"
+  },
+  {
+    "id": "288",
+    "name": "BARDAHL DIESEL OIL, 15W40 CH-4/SJ",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "974",
+    "enlace": "NULL"
+  },
+  {
+    "id": "289",
+    "name": "BARDAHL DIESEL OIL, 20W50 CH-4/SJ",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "979.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "290",
+    "name": "BARDAHL DIESEL OIL, 20W50 CH-4/SJ",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10291.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "291",
+    "name": "BARDAHL DIESEL OIL, 20W50 CH-4/SJ",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "47492.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "292",
+    "name": "BARDAHL BENTONA ALTA TEMPERATURA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1323.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "293",
+    "name": "BARDAHL CHASIS NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1050.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "294",
+    "name": "BARDAHL CHASIS NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "9971.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "295",
+    "name": "BARDAHL FIBROSA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1212.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "296",
+    "name": "BARDAHL MULTILITIO NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1390.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "297",
+    "name": "BARDAHL MULTILITIO NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14722.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "298",
+    "name": "BARDAHL TRACTOR OIL JD-MF",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1440.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "299",
+    "name": "BARDAHL TRANS CAT TO-4 SAE 30",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1468.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "300",
+    "name": "BARDAHL TRANS CAT TO-4 SAE 30",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15433.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "301",
+    "name": "BARDAHL TRANS CAT TO-4 SAE 50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1468.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "302",
+    "name": "BARDAHL TRANS CAT TO-4 SAE 50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15433.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "303",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 32",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "966.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "304",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 32",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10157.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "305",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 46",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "966.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "306",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 46",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10157.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "307",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1086.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "308",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "9205.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "309",
+    "name": "BARDAHL MAXLUB MR EP ISO VG 100",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1325.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "310",
+    "name": "BARDAHL MAXLUB MR EP ISO VG 150",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1302.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "311",
+    "name": "BARDAHL MAXLUB MR EP ISO VG 150",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "13681.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "312",
+    "name": "BARDAHL MAXLUB MR EP ISO VG 220",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1302.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "313",
+    "name": "BARDAHL MAXLUB MR EP ISO VG 220",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "13681.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "314",
+    "name": "BARDAHL MAXILUB MR COMPRESORES ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1393.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "315",
+    "name": "BARDAHL MAXILUB MR COMPRESORES ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14646.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "316",
+    "name": "BARDAHL SLIDE OIL EP ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1388.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "317",
+    "name": "BARDAHL HEAT TRANSFER ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12413.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "318",
+    "name": "BARDAHL LUBARSA LITIO EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1557.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "319",
+    "name": "BARDAHL LUBARSA LITIO EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14317.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "320",
+    "name": "BARDAHL LUBARSA LITIO MOLLY EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "2225.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "321",
+    "name": "BARDAHL LUBARSA LITIO MOLLY EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "21169.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "322",
+    "name": "MEXLUB MR ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1363.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "323",
+    "name": "MEXLUB MR ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14317.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "324",
+    "name": "MEXLUB MR ATF DEXRON II",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1425.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "325",
+    "name": "MEXLUB MR ENGRANES UNIVERSALES, 80W90 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1527.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "326",
+    "name": "MEXLUB MR ENGRANES UNIVERSALES, 85W140 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1527.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "327",
+    "name": "MEXLUB MR TRANSMISION, SAE 90 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1417.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "328",
+    "name": "MEXLUB MR TRANSMISION, SAE 140 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1417.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "329",
+    "name": "MEXLUB MR TRANSMISION, SAE 140 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "14892",
+    "enlace": "NULL"
+  },
+  {
+    "id": "330",
+    "name": "MEXLUB MR TRANSMISION, SAE 250 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1428",
+    "enlace": "NULL"
+  },
+  {
+    "id": "331",
+    "name": "MEXLUB MR TITANIUM, 15W40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1154.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "332",
+    "name": "MEXLUB MR TITANIUM, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1154.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "333",
+    "name": "MEXLUB MR TITANIUM, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12163.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "334",
+    "name": "MEXLUB MR TITANIUM, SAE 40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1097.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "335",
+    "name": "MEXLUB MR TITANIUM, SAE 40 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "11587.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "336",
+    "name": "MEXLUB MR TITANIUM, SAE 50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1097.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "337",
+    "name": "MEXLUB MR DIESEL CI-4 SAE 15W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "410.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "338",
+    "name": "MEXLUB MR DIESEL, 15W40 CI-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1467.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "339",
+    "name": "MEXLUB MR DIESEL, 15W40 CI-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12777.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "340",
+    "name": "MEXLUB MR DIESEL CH-4 SAE 15W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1396.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "341",
+    "name": "MEXLUB MR DIESEL CH-4 SAE 20W50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "389.06",
+    "enlace": "NULL"
+  },
+  {
+    "id": "342",
+    "name": "MEXLUB MR DIESEL, 20W50 CH-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1396.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "343",
+    "name": "MEXLUB PARA MOTORES DIESEL CON GRAN KILOMETRAJE, 25W50 CF",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1370.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "344",
+    "name": "MEXLUB PARA MOTORES DIESEL CON GRAN KILOMETRAJE, 25W50 CF",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12226.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "345",
+    "name": "MEXLUB DIESEL SERIES 3, SAE 40 CF/CF-2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1222.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "346",
+    "name": "MEXLUB DIESEL SERIES 3, SAE 40 CF/CF-2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10780.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "347",
+    "name": "MEXLUB DIESEL SERIES 3, SAE 50 CF/CF-2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1222.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "348",
+    "name": "MEXLUB DIESEL SERIES 3, SAE 50 CF/CF-2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10780.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "349",
+    "name": "MEXLUB MR GRASA BENTONA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1071.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "350",
+    "name": "MEXLUB MR FLUIDO PARA TRACTOR AGRÍCOLA BB",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1226.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "351",
+    "name": "MEXLUB MR FLUIDO PARA TRACTOR AGRÍCOLA BB",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "12885.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "352",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 150 (ISO VG 32)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "961.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "353",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 220 (ISO VG 46)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "961.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "354",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 220 (ISO VG 46)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10092.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "355",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 300 (ISO VG 68)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "734.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "356",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 300 (ISO VG 68)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "9974.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "357",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 300 (ISO VG 68)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "45613.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "358",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 450 (ISO VG 100)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1022.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "359",
+    "name": "MEXLUB MR HIDRÁULICO, DTH 450 (ISO VG 100)",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10636.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "360",
+    "name": "MEXLUB MR GRASA LITIO EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1461.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "361",
+    "name": "MEXLUB MR GRASA MULTILITIO MOLLY EP NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "1935.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "373",
+    "name": "BARDAHL ATF MULTIVEHICULOS SINTÉTICO, MERCON V",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "148.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "375",
+    "name": "BARDAHL ATF-3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "357.98",
+    "enlace": "NULL"
+  },
+  {
+    "id": "376",
+    "name": "BARDAHL ATF-II PARA MAS DE 100,000 KM",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.81",
+    "enlace": "NULL"
+  },
+  {
+    "id": "377",
+    "name": "BARDAHL GEAR OIL, 80W90 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "378",
+    "name": "BARDAHL GEAR OIL, 85W140 GL-5",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "379",
+    "name": "BARDAHL GEAR OIL, 90 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "380",
+    "name": "BARDAHL GEAR OIL, 140 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "381",
+    "name": "BARDAHL GEAR OIL, 250 GL-1",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.13",
+    "enlace": "NULL"
+  },
+  {
+    "id": "382",
+    "name": "BARDAHL FUSIÓN 16,000 KM, 15W40 SN",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "15669.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "387",
+    "name": "BARDAHL SUPER RACING OIL, 20W50 SL",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "432.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "388",
+    "name": "BARDAHL BIOS PARA MÁS DE 100,000 KM, 25W50 SL BRICK POUCH",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "86.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "399",
+    "name": "BARDAHL DIESEL OIL, 15W40 CK-4",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "16906.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "400",
+    "name": "BARDAHL JUNTAS HOMOCINÉTICAS NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "69.56",
+    "enlace": "NULL"
+  },
+  {
+    "id": "401",
+    "name": "BARDAHL BENTONA ALTA TEMPERATURA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "34.73",
+    "enlace": "NULL"
+  },
+  {
+    "id": "402",
+    "name": "BARDAHL BENTONA ALTA TEMPERATURA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "60",
+    "enlace": "NULL"
+  },
+  {
+    "id": "403",
+    "name": "BARDAHL BENTONA ALTA TEMPERATURA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "374.93",
+    "enlace": "NULL"
+  },
+  {
+    "id": "404",
+    "name": "BARDAHL CHASIS NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "52.72",
+    "enlace": "NULL"
+  },
+  {
+    "id": "405",
+    "name": "BARDAHL CHASIS NLGI 2",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "297.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "406",
+    "name": "BARDAHL FIBROSA NLGI 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "49.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "407",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 68",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "41541.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "408",
+    "name": "BARDAHL HYDRAULIC OIL, ISO VG 100",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "10758.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "409",
+    "name": "MEXLUB MR, ATF DEXRON II",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.54",
+    "enlace": "NULL"
+  },
+  {
+    "id": "410",
+    "name": "MEXLUB MR, SL 15W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.58",
+    "enlace": "NULL"
+  },
+  {
+    "id": "411",
+    "name": "MEXLUB MR, SL 15W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "372.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "412",
+    "name": "MEXLUB MR, SL 20W50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "79.58",
+    "enlace": "NULL"
+  },
+  {
+    "id": "413",
+    "name": "MEXLUB MR, SL 20W50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "372.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "414",
+    "name": "MEXLUB TITANIUM MR, SL SAE 40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "83.81",
+    "enlace": "NULL"
+  },
+  {
+    "id": "416",
+    "name": "MEXLUB TITANIUM MR, SL SAE 50",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "83.81",
+    "enlace": "NULL"
+  },
+  {
+    "id": "418",
+    "name": "MEXLUB PARA MOTORES A DIESEL CON GRAN KILOMETRAJE 25W50 CF",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "386.25",
+    "enlace": "NULL"
+  },
+  {
+    "id": "419",
+    "name": "MEXLUB DIESEL, 40 CF/CF-2, SERIES 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "84.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "421",
+    "name": "MEXLUB DIESEL, 50 CF/CF-2, SERIES 3",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "84.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "423",
+    "name": "BARDAHL TRANSFORMER OIL 35 KV BDI TIPO II",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "9283.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "424",
+    "name": "BARDAHL TRANSFORMER OIL 35 KV BD NI TIPO II",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "9283.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "426",
+    "name": "DICTAMEN NOM-005-ASEA-2016 OPERACIÓN Y MANTENIMIENTO",
+    "descripcion": "NULL",
+    "supplier": "Orkalf",
+    "price": "5000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "427",
+    "name": "DICTAMEN NOM-016-CRE-2016 ES",
+    "descripcion": "NULL",
+    "supplier": "Orkalf",
+    "price": "3000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "429",
+    "name": "Lavado de tanque (No incluye viáticos) y máximo recolección 2 tambos",
+    "descripcion": "NULL",
+    "supplier": "JLR",
+    "price": "18150",
+    "enlace": "NULL"
+  },
+  {
+    "id": "430",
+    "name": "Recolección de tambo de residuos de lavado (No incluye viáticos)",
+    "descripcion": "NULL",
+    "supplier": "JLR",
+    "price": "1650",
+    "enlace": "NULL"
+  },
+  {
+    "id": "431",
+    "name": "Cubicación a tanque de almacenamiento",
+    "descripcion": "NULL",
+    "supplier": "IPROMER",
+    "price": "7700",
+    "enlace": "NULL"
+  },
+  {
+    "id": "432",
+    "name": "Recalibración y configuración de consola",
+    "descripcion": "NULL",
+    "supplier": "IPROMER",
+    "price": "2500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "434",
+    "name": "Dictamen NOM-016-CRE-2016 para la Dictaminación de Análisis de Petroliferos",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "3000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "435",
+    "name": "Calcomanía  \\\" HOMBRES \\\"  (25.00 x 25.00 cm.)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "20.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "436",
+    "name": "Seguros para breaktime PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "437",
+    "name": "Calcomanía  \\\" MUJERES \\\"  (25.00 x 25.00 cm.)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "20.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "438",
+    "name": "Anuncio en trovisel \\\"EXTINGUIDOR\\\"  de 25 X 25 cms.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "83.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "439",
+    "name": "Pistola de 1/4\" para agua PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "18.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "440",
+    "name": "Inflador (690) doble de 1/4 X 6¨´ para camión PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "9.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "441",
+    "name": "Inflador (695) corto con espiga de 1/4\" para automóvil PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "4.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "442",
+    "name": "Inflador (699) corto con rosca para automóvil PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "3.17",
+    "enlace": "NULL"
+  },
+  {
+    "id": "443",
+    "name": "Registro contenedor con válvula de drenado, capacidad para 5 galones PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "731.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "444",
+    "name": "Subensamble para Shut-off (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "34.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "445",
+    "name": "Capacitor para motobomba red Jacket de 1.5 hp (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "49.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "446",
+    "name": "Pistola de 1/2\\\" roja 11-BP91093 AUTOMATICA PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "108.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "447",
+    "name": "Pistola de 1/2\\\" verde 11-BP-91093 AUTOMATICA PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "108.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "448",
+    "name": "Breaktime reusable AB-34 de 3/4\\\" para gasolina sin manguera PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "47.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "449",
+    "name": "Controlador inteligente STP_SCI FE PETRO para motobomba de 3/4, 1.5 y 2  H.P (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "608.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "450",
+    "name": "Juego de cables para motobomba (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "118",
+    "enlace": "NULL"
+  },
+  {
+    "id": "451",
+    "name": "Calcomanía  \"APAGUE SU TELEFONO CELULAR\" de 25 X 25 cms.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "0",
+    "enlace": "NULL"
+  },
+  {
+    "id": "452",
+    "name": "Calcomanías para protección \\\" U \\\" 8X37 CM",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "24.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "453",
+    "name": "Manguera para aire y agua de 1/4\\\" X 8.0 Mts. 200(PSI) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "29",
+    "enlace": "NULL"
+  },
+  {
+    "id": "454",
+    "name": "O ring WM033193-0002 para Filtro Sedazo (1) para Medidores I-meter 2 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "3.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "455",
+    "name": "TENSOR WMO29945 DE CUERDA PARA HELIX 6000 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "62.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "456",
+    "name": "VALVULA SELENOIDE PARA DISPENSARIO HELIX 6000 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "304.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "457",
+    "name": "Lexan teclado para preset de Dispensario Helix modelos 4000 y 5000 HDR (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "5.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "458",
+    "name": "WIP Wayne inteligent pulser dispensarios hdr (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "97.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "459",
+    "name": "TECLADO MATRIZ PARA DISPENSARIO HELIX PRESET WU007271-0001 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "59.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "460",
+    "name": "O\\'ring WM038591-0001 para Base Superior (1) de Medidores I-meter 2 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "33.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "461",
+    "name": "O\\'ring WM038597-0001 para Base Inferior (2) de Medidores I-meter 2 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "17.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "462",
+    "name": "O\\'ring WM038598-0001 para Adaptador de Filtro (1) y Base Inferior (1) de Medidores I-meter 2 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "463",
+    "name": "Pistola para helix 6000 color rojo (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "369.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "464",
+    "name": "Pistola para helix 6000 color verde (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "369.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "465",
+    "name": "Kit de repuesto para breaktime 3/4\\\" PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "8.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "466",
+    "name": "PISTOLA NEGRA N40B 1\\\" AUTOMATICA FULLMASTER DIESEL (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "124.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "467",
+    "name": "Gasoila teflón liquido Lata 8 Oz. (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "21.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "468",
+    "name": "Empaque para codo de descarga 4\\\"X5 1/4 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "11.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "469",
+    "name": "Calcomanía \\\"AGUA\\\" (20.00 x 10.00 cm.)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "13.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "470",
+    "name": "Calcomanía \\\"AIRE\\\"(20.00 x 10.00 cm.)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "13.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "471",
+    "name": "Cople de 4\\\" para manguera de descarga (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "32.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "472",
+    "name": "Valvula de seguridad 10BHMP-5830 de 1 ½ \\\" doble popeta (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "235.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "473",
+    "name": "Empaque para manguera de descarga (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "4.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "474",
+    "name": "Anuncio en trovisel  \\\"PARO DE EMERGENCIA\\\" de 25 X 25 cms.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "83.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "475",
+    "name": "Calcomanía \\\"NO FUMAR\\\" (25.00 x 25.00 cm.) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "20.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "476",
+    "name": "WIP Wayne inteligent pulser dispensarios Polymer (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "115.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "477",
+    "name": "INFLADOR SCH-250 PARA AIRE DE 1/4\\\" CON ROSCA HEMBRA (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "16.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "478",
+    "name": "Pistola verde 1/2  para recuperador de vapores (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "794.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "479",
+    "name": "Manguera  3/4\\\" x 13.64 ( 4.16MTS) para dispensarios Helix 6000 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "132.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "480",
+    "name": "Manguera VERDE en espiral de 1/4\\\" x  25´para imagen 2 pemex (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "32.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "481",
+    "name": "Válvula  selenoide proporcional  para Dispensario Helix 4000 y 5000 (Flujo Normal) … PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "236.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "482",
+    "name": "Calcomanía en vinil reflejante 3M “PROHIBIDO EL USO DE CELULAR” nuevo diseño medidas: 18.00 x 25.00 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "188.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "483",
+    "name": "Calcamonia en vinil reflejante PELIGRO DESCARGANDO COMBUSTIBLE ( 60 x 80 CMS. )",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "577.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "484",
+    "name": "Calcamonia \\\"Area Fuera de Servicio\\\" para biombo",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "577.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "485",
+    "name": "Calcomanía en vinil \\\"APAGUE EL MOTOR\\\" nuevo diseño medidas: 25.00 x 25.00 cm.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "20.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "486",
+    "name": "Fundas negras para pistola de diésel 7HB PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "17.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "487",
+    "name": "Tarjeta supresora de picos para consola tls-350 Veeder Root (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "357.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "488",
+    "name": "Mag VFC Caja de Velocidad Variable para motobomba de 2 y 4 H.P (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1541",
+    "enlace": "NULL"
+  },
+  {
+    "id": "489",
+    "name": "Destorcedor de 3/4\\\" x 3/4\\\" para dispensario de gasolina PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "42.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "490",
+    "name": "Destorcedor de 1\\\" x 1\\\" para dispensario de diésel PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "96.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "491",
+    "name": "Calcomanía \\\"BASURA\\\" (25.00 x 25.00 cm.)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "20.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "492",
+    "name": "Unidad de bombeo de 1.5 hp FE PETRO PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1276.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "494",
+    "name": "Pasta (WF25) para medir agua. Lata de 2.5 Oz (70g) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "7.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "495",
+    "name": "Pila para CPU de Veeder Root (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "42.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "496",
+    "name": "Bote hexagonal (737103) 30HXCZGR para basura en colOR gris con capacidad para 30 galones de 73.70 cm (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "152",
+    "enlace": "NULL"
+  },
+  {
+    "id": "497",
+    "name": "Manguera azul en espiral de 1/4\\\" para dispensarios electrónicos (aire-agua) CONECCIONES GIRATORIAS (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "498",
+    "name": "Teclado para preset de Dispensario modelo Helix 4000 y 5000 Lexan WM047521-0001 PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "6.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "499",
+    "name": "TARJETA GRIB PARA CONSOLA FUSION (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "346.05",
+    "enlace": "NULL"
+  },
+  {
+    "id": "500",
+    "name": "Manguera para descarga de autotanque de 4\\\" 6 metros (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "64.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "501",
+    "name": "Pistola Negra modelo 11BP-94093 automática de ½\\\" para gasolina con sensor de Presión (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "108.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "502",
+    "name": "Válvula  selenoide WP000372-0001 para Dispensario Helix 4000 (Unicamente Diesel Alto Flujo) PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1049.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "503",
+    "name": "Cono naranja fluorescente de 71 cms. (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "18.3",
+    "enlace": "NULL"
+  },
+  {
+    "id": "504",
+    "name": "Sensor WM045692-0001 interruptor de pistola (microswitch) para Dispensario modelo Helix 4000 y 5000 PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "55.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "505",
+    "name": "Barrera WU005093-0001 de seguridad Intrínsica de 3 canales para Dispensario modelo Helix 4000 y 5000 PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "230.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "506",
+    "name": "Teclado WU007271-0001 matríz (preset) para Dispensario modelo Helix 4000 y 5000 (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "119.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "507",
+    "name": "Empaque E-1016 de 4\\\" para adaptador de bronce (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "13.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "508",
+    "name": " Arrestador 677 de flama de 2\\\" PRECIP EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "439.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "509",
+    "name": "O\\'ring 001-921130 de 5 mm x 4.2 cm para conectores doble golpe (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "2.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "510",
+    "name": "Pasta (GG25) para medir combustible. Lata de 2.5 Oz (70g) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "7.15",
+    "enlace": "NULL"
+  },
+  {
+    "id": "511",
+    "name": "Breaktime reusable AB 1 de 1\\\" para dispensario de diésel PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "94.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "512",
+    "name": "Tapa de cierre hermético para registro de llenado de 4\\\" PRECIO EN DOLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "49.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "513",
+    "name": "Cople de 6\\\" a 4\\\" para descarga de autotanque (trompa de cochino) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "89.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "514",
+    "name": "Visor de combustible para manguera de despacho de gasolina de 3/4\\\" X 3/4\\\" (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "45.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "515",
+    "name": "Tapa 305XP-2300 AC de cierre hermetico de 2\\\" con puerto para espacio anular PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "51.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "516",
+    "name": "Adaptador 305-0000 AA  de Bronce de 2\\\" para espacio anular PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "43.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "517",
+    "name": "Unidad de bombeo de 2 hp FE PETRO (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1362.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "518",
+    "name": "Tapa de cierre hermético de 3\\\" NARANJA PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "47.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "519",
+    "name": "Filtro (800-30) de 30 micras para dispensario HS3 con entrada de 1.5\\\" PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "33.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "520",
+    "name": "Codo de descarga hermética  en aluminio con mirilla (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "449.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "521",
+    "name": "Valvula de presión/vacío 623V-2203 de 2” precalibrada de 2.5 a 6 C. de A. (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "203.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "522",
+    "name": "Euro inflador de 1/4\\\" (abierto) para dispensarios electrónicos (aire) (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "523",
+    "name": "CONECTOR FLEXIBLE DE 2\\\" X 30 CON SWIVEL (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "283.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "524",
+    "name": "Media Funda verde para pistola de gasolina (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "12.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "525",
+    "name": "PISTOLA NEGRA DE 1\\\" PARA DIESEL 7HB PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "199.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "526",
+    "name": "Kit de repuesto para breaktime 1\\\" (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "10.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "527",
+    "name": "Unidad de bombeo de 4 hp FE PETRO (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "1676",
+    "enlace": "NULL"
+  },
+  {
+    "id": "528",
+    "name": "Pico para pistola de gasolina PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "21.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "529",
+    "name": "TOPE INMOBILIZADOR (CALZA TIPO PIRAMIDE) (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "42.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "530",
+    "name": "BOTE GRIS EXAGONAL 45 GALONES CON SERVICENTRO (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "332.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "531",
+    "name": "SENSOR DE LIQUIDOS ESPACIO ANULAR SL-600 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "127.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "532",
+    "name": "Manguera Continental/FUTURA negra de 1\\\" x 18\\\"(5.49 mts) de largo con conexiones cromadas para diesel PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "124.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "533",
+    "name": "Manguera corta de 1\\\" X 9\\\" para dispensario de diesel CONEXIONES CROMADAS PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "53.65",
+    "enlace": "NULL"
+  },
+  {
+    "id": "534",
+    "name": "Manguera corta de 3/4\\\" X9\\\" CONEXIONES CROMADAS para dispensario de gasolina PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "32.95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "535",
+    "name": "MANGUERA NEGRA DE 3/4 X13 CONEXIONES CROMADAS PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "73.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "536",
+    "name": "Oreja para coples diversos (manivelas para coples de descarga) PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "9.4",
+    "enlace": "NULL"
+  },
+  {
+    "id": "537",
+    "name": "Calcamonia  RUTA DE EVACUACION\\\" EN VINIL izquierda de 30 X 45 cms.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "53.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "538",
+    "name": "Calcamonia  RUTA DE EVACUACION\\\" EN VINIL derecha de 30 X 45 cms.",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "53.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "539",
+    "name": "Filtro cedazo tipo sombrero PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "12.64",
+    "enlace": "NULL"
+  },
+  {
+    "id": "540",
+    "name": "Bata verde imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "541",
+    "name": "Camisola verde imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "542",
+    "name": "Pantalón verde imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "343.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "543",
+    "name": "Chamarra cazadora imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "950.98",
+    "enlace": "NULL"
+  },
+  {
+    "id": "544",
+    "name": "Gorra verde imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "168.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "545",
+    "name": "Camisola gris para despachador \\\"NIP\\\"",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "546",
+    "name": "Pantalón tipo cargo negro. \\\"NIP\\\"",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "489.22",
+    "enlace": "NULL"
+  },
+  {
+    "id": "547",
+    "name": "Overol negro c/cintas reflejantes",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "706.37",
+    "enlace": "NULL"
+  },
+  {
+    "id": "548",
+    "name": "Chamarra \\\"NIP\\\"",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "778.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "549",
+    "name": "Sudadera negra. \\\"NIP\\\"",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "642.72",
+    "enlace": "NULL"
+  },
+  {
+    "id": "550",
+    "name": "Gorra nueva imagen Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "168.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "551",
+    "name": "Camisola blanca supervisor",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "552",
+    "name": "Pantalón gris supervisor",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "343.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "553",
+    "name": "Chamarra blanca supervisor",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "778.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "554",
+    "name": "Playera verde, tipo Polo, manga corta.",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "555",
+    "name": "Playera verde, tipo Polo, manga larga.",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "406.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "556",
+    "name": "Playera blanca, tipo Polo, manga corta.",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "557",
+    "name": "Playera Polo Blanca, Manga Larga. Incluye Bordados (4)",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "406.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "558",
+    "name": "Overol verde imagen tradicional Pemex",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_BRISCO",
+    "price": "693.89",
+    "enlace": "NULL"
+  },
+  {
+    "id": "559",
+    "name": "Calzado dieléctrico, CA-MEX SAFETY 1200 CLASICO MARVEL",
+    "descripcion": "NULL",
+    "supplier": "UNIFORMES_INDUSTRIALES",
+    "price": "615",
+    "enlace": "NULL"
+  },
+  {
+    "id": "561",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  2.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "259",
+    "enlace": "NULL"
+  },
+  {
+    "id": "562",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  4.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "279",
+    "enlace": "NULL"
+  },
+  {
+    "id": "563",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  6 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "299",
+    "enlace": "NULL"
+  },
+  {
+    "id": "564",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  9 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "330",
+    "enlace": "NULL"
+  },
+  {
+    "id": "565",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  12 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "420",
+    "enlace": "NULL"
+  },
+  {
+    "id": "566",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  35 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "2390",
+    "enlace": "NULL"
+  },
+  {
+    "id": "567",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  50 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "3090",
+    "enlace": "NULL"
+  },
+  {
+    "id": "568",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR POLVO QUÍMICO ABC  70 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "3750",
+    "enlace": "NULL"
+  },
+  {
+    "id": "569",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  2.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "609",
+    "enlace": "NULL"
+  },
+  {
+    "id": "570",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABCC  4.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "839",
+    "enlace": "NULL"
+  },
+  {
+    "id": "571",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  6 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "979",
+    "enlace": "NULL"
+  },
+  {
+    "id": "572",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  9 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "1099",
+    "enlace": "NULL"
+  },
+  {
+    "id": "573",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  12 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "1610",
+    "enlace": "NULL"
+  },
+  {
+    "id": "574",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  35 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "6699",
+    "enlace": "NULL"
+  },
+  {
+    "id": "575",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  50 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "8289",
+    "enlace": "NULL"
+  },
+  {
+    "id": "576",
+    "name": "EXTINTOR NUEVO POLVO QUÍMICO ABC  70 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "13499",
+    "enlace": "NULL"
+  },
+  {
+    "id": "577",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR BIÓXIDO DE CARBONO CO2  2.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "199",
+    "enlace": "NULL"
+  },
+  {
+    "id": "578",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR BIÓXIDO DE CARBONO CO2  4.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "389",
+    "enlace": "NULL"
+  },
+  {
+    "id": "579",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR BIÓXIDO DE CARBONO CO2  6.8 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "469",
+    "enlace": "NULL"
+  },
+  {
+    "id": "580",
+    "name": "RECARGA Y MANTENIMIENTO EXTINTOR BIÓXIDO DE CARBONO CO2  9 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "589",
+    "enlace": "NULL"
+  },
+  {
+    "id": "581",
+    "name": "EXTINTOR NUEVO BIÓXIDO DE CARBONO CO2  2.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "2839",
+    "enlace": "NULL"
+  },
+  {
+    "id": "582",
+    "name": "EXTINTOR NUEVO BIÓXIDO DE CARBONO CO2  4.5 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "3729",
+    "enlace": "NULL"
+  },
+  {
+    "id": "583",
+    "name": "EXTINTOR NUEVO BIÓXIDO DE CARBONO CO2 6.8 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "7119",
+    "enlace": "NULL"
+  },
+  {
+    "id": "584",
+    "name": "EXTINTOR NUEVO BIÓXIDO DE CARBONO CO2  9 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "8069",
+    "enlace": "NULL"
+  },
+  {
+    "id": "585",
+    "name": "JUEGO DE JUNTAS Y EMPAQUES DE NITRILO",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "40",
+    "enlace": "NULL"
+  },
+  {
+    "id": "586",
+    "name": "DISCO DE SEGURIDAD RETENEDOR DE PRESIÓN PARA CO2",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "587",
+    "name": "MANÓMETRO INDICADOR DE PRESIÓN",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "95",
+    "enlace": "NULL"
+  },
+  {
+    "id": "588",
+    "name": "VÁLVULA DE ALUMINO 1'' CON TUBO PARA EXTINTOR DE 4.5 A 70 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "215",
+    "enlace": "NULL"
+  },
+  {
+    "id": "589",
+    "name": "VÁSTAGO RETENEDOR DE PRESION",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "77",
+    "enlace": "NULL"
+  },
+  {
+    "id": "590",
+    "name": "TUBO SIFÓN 1\"\" PARA EXTINTOR",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "40",
+    "enlace": "NULL"
+  },
+  {
+    "id": "591",
+    "name": "MANGUERA 3/8'' LARGA PARA EXTINTOR PQS DE 4.5 A 12 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "80",
+    "enlace": "NULL"
+  },
+  {
+    "id": "592",
+    "name": "MANGUERA 3/8\" PARA EXTINTOR CO2 ALUMINIO",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "690",
+    "enlace": "NULL"
+  },
+  {
+    "id": "593",
+    "name": "SOPORTE DE PARED PARA EXTINTORES DE PQS Y CO2 DE 4 A 12 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "594",
+    "name": "PORTAEXTINTOR CILíNDRICO DE ACERO INOXIDABLE, ACABADO EN ESPEJO, PARA EXTINTOR DE 4.5 A 9.0 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "910",
+    "enlace": "NULL"
+  },
+  {
+    "id": "595",
+    "name": "FUNDA CON VENTANA PARA PQS DE 4 KG A 9 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "310",
+    "enlace": "NULL"
+  },
+  {
+    "id": "596",
+    "name": "FUNDA PARA UNIDAD MÓVIL DE 35 KG, 50KG Y 70 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "535",
+    "enlace": "NULL"
+  },
+  {
+    "id": "597",
+    "name": "GABINETE EN COLOR ROJO EXTINTORES DE 4.5 KG A 9.0 KG",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "1350",
+    "enlace": "NULL"
+  },
+  {
+    "id": "598",
+    "name": "TAMBO ARENERO CONTRA INCENDIO (SIN ARENA)",
+    "descripcion": "NULL",
+    "supplier": "Extintores CM",
+    "price": "1450",
+    "enlace": "NULL"
+  },
+  {
+    "id": "603",
+    "name": "prueba",
+    "descripcion": "NULL",
+    "supplier": "RNB",
+    "price": "15.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "604",
+    "name": "SERVICIO A 1 RECIPIENTE SUJETOS A PRESIÓN USADO NOM-020-STPS-2011 INCLUYE VÁLVULA DE SEGURIDAD Y CURSO A 2 PERSONAS",
+    "descripcion": "NULL",
+    "supplier": "Arsadi",
+    "price": "8190",
+    "enlace": "NULL"
+  },
+  {
+    "id": "605",
+    "name": "ESTUDIO TIERRAS FÍSICAS NOM-022-STPS-2015",
+    "descripcion": "NULL",
+    "supplier": "Arsadi",
+    "price": "4725",
+    "enlace": "NULL"
+  },
+  {
+    "id": "606",
+    "name": "ESTUDIO ILUMINACIÓN NOM-025-STPS-2008",
+    "descripcion": "NULL",
+    "supplier": "Arsadi",
+    "price": "4725",
+    "enlace": "NULL"
+  },
+  {
+    "id": "607",
+    "name": "ANALISIS DE RIESGO",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "10500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "608",
+    "name": "CÉDULA DE OPERACIÓN ANUAL",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "3570",
+    "enlace": "NULL"
+  },
+  {
+    "id": "609",
+    "name": "PROTOCOLO DE RESPUESTA A EMERGENCIAS (PRE)",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "10500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "610",
+    "name": "DICTAMEN NOM-005-ASEA-2016",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "6090",
+    "enlace": "NULL"
+  },
+  {
+    "id": "611",
+    "name": "AUDITORÍA EXTERNA SASISOPA",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "9450",
+    "enlace": "NULL"
+  },
+  {
+    "id": "612",
+    "name": "SISTEMA DE GESTIÓN DE MEDICIONES",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "15225",
+    "enlace": "NULL"
+  },
+  {
+    "id": "613",
+    "name": "ESTUDIO DE VULNERABILIDAD DE SEGURIDAD PRIMERA VEZ",
+    "descripcion": "NULL",
+    "supplier": "GDS",
+    "price": "13000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "614",
+    "name": "ESTUDIO DE VULNERABILIDAD DE SEGURIDAD SUBSECUENTE",
+    "descripcion": "NULL",
+    "supplier": "GDS",
+    "price": "6500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "615",
+    "name": "FORTINET F60 (INCLUYE SOPORTE ANUAL) PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "ASIAMI",
+    "price": "1140",
+    "enlace": "NULL"
+  },
+  {
+    "id": "616",
+    "name": "PRUEBAS DE HERMETICIDAD ANUALES POR TANQUE (no incluye viáticos)",
+    "descripcion": "NULL",
+    "supplier": "ZESA",
+    "price": "1320",
+    "enlace": "NULL"
+  },
+  {
+    "id": "617",
+    "name": "Calibración de Sondas Nivel y Temperatura",
+    "descripcion": "NULL",
+    "supplier": "IPROMER",
+    "price": "4500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "618",
+    "name": "DICTAMEN ANEXO 30 Y 31 AÑO 2025",
+    "descripcion": "NULL",
+    "supplier": "VERIFIGAS",
+    "price": "40000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "619",
+    "name": "DICTAMEN ANEXO 30 Y 31 AÑO 2024 (SUBSECUENTE)",
+    "descripcion": "NULL",
+    "supplier": "VERIFIGAS",
+    "price": "28000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "620",
+    "name": "BATA VERDE",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "621",
+    "name": "CAMISA VERDE",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "622",
+    "name": "PANTALON VERDE",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "343.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "623",
+    "name": "CAZADORA TRADICIONAL DESPACHADOR",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "950.98",
+    "enlace": "NULL"
+  },
+  {
+    "id": "624",
+    "name": "OVEROL VERDE",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "693.89",
+    "enlace": "NULL"
+  },
+  {
+    "id": "625",
+    "name": "GORRA VERDE",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "168.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "626",
+    "name": "CAMISOLA 100%  GRIS MANGA LARGA/CORTA INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "627",
+    "name": "PANTALON CARGO 100%, NEGRO, INCLUYE BORDADO (1) CON REFLEJANTES",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "489.22",
+    "enlace": "NULL"
+  },
+  {
+    "id": "628",
+    "name": "OVEROL 100%, NEGRO, CINTAS REFLEJANTES. INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "706.37",
+    "enlace": "NULL"
+  },
+  {
+    "id": "629",
+    "name": "CHAMARRA NEGRA 100%, INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "778.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "630",
+    "name": "SUDADERA 100%, NEGRA, INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "642.72",
+    "enlace": "NULL"
+  },
+  {
+    "id": "631",
+    "name": "GORRA NEGRA, INCLUYE BORDADOS (3)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "168.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "632",
+    "name": "CAMISOLA BLANCA 100% MANGA LARGA /CORTA. INCLUYE BORDADOS (4)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "633",
+    "name": "PANTALON GRIS 100%. INCLUYE BORDADOS (1)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "343.2",
+    "enlace": "NULL"
+  },
+  {
+    "id": "634",
+    "name": "CHAMARRA BLANCA 100%, INCLUYE BORDADOS (4)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "778.75",
+    "enlace": "NULL"
+  },
+  {
+    "id": "635",
+    "name": "PLAYERA POLO VERDE MANGA CORTA, INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "636",
+    "name": "PLAYERA POLO VERDE MANGA LARGA, INCLUYE BORDADOS (5)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "406.85",
+    "enlace": "NULL"
+  },
+  {
+    "id": "637",
+    "name": "PLAYERA POLO BLANCA MANGA CORTA, INCLUYE BORDADOS (4)",
+    "descripcion": "NULL",
+    "supplier": "CONFECCIONES_HERRERA",
+    "price": "396.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "638",
+    "name": "DICTAMEN ANEXO 30 Y 31 AÑO 2024",
+    "descripcion": "NULL",
+    "supplier": "VERIFIGAS",
+    "price": "32000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "639",
+    "name": "BARDAHL FORMULA 1 SINTETICO, 5W20",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "140.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "640",
+    "name": "BARDAHL FORMULA 1 SINTETICO, 5W40",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "140.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "641",
+    "name": "PRUEBAS DE HERMETICIDAD INICIALES POR TANQUE (No incluye viáticos)",
+    "descripcion": "NULL",
+    "supplier": "ZESA",
+    "price": "2750",
+    "enlace": "NULL"
+  },
+  {
+    "id": "642",
+    "name": "ANTIVIRUS SENTINEL 1 LICENCIA (PRECIO EN DOLARES)",
+    "descripcion": "NULL",
+    "supplier": "ASIAMI",
+    "price": "39.38",
+    "enlace": "NULL"
+  },
+  {
+    "id": "643",
+    "name": "Lavado de Tanque sin recolección de residuos peligrosos (No incluye Viáticos)",
+    "descripcion": "NULL",
+    "supplier": "JLR",
+    "price": "14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "644",
+    "name": "CAJA DE PAPEL BOND T/C COPY LASER 70GRS",
+    "descripcion": "NULL",
+    "supplier": "DIPATH",
+    "price": "707",
+    "enlace": "NULL"
+  },
+  {
+    "id": "645",
+    "name": "CAJA DE PAPEL BOND T/C INACOPIA 70GRS",
+    "descripcion": "NULL",
+    "supplier": "DIPATH",
+    "price": "707",
+    "enlace": "NULL"
+  },
+  {
+    "id": "646",
+    "name": "NODO DE PUERTA 5, PARA DISPENSARIOS ENCORE GILBARCO PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "1235",
+    "enlace": "NULL"
+  },
+  {
+    "id": "647",
+    "name": "Adaptador Cola de Raton Vx680\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "383",
+    "enlace": "NULL"
+  },
+  {
+    "id": "648",
+    "name": "Tapa impresor vx680\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "846",
+    "enlace": "NULL"
+  },
+  {
+    "id": "649",
+    "name": "Fuente de poder vx680\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "502.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "650",
+    "name": "Bateria externa vx680\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "538.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "651",
+    "name": "Fuente de poder vx520\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "502.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "652",
+    "name": "Base Vx680\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "2760",
+    "enlace": "NULL"
+  },
+  {
+    "id": "653",
+    "name": "Bateria externa i9000s (urovo)\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "936",
+    "enlace": "NULL"
+  },
+  {
+    "id": "654",
+    "name": "Bateria externa V200\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "492",
+    "enlace": "NULL"
+  },
+  {
+    "id": "655",
+    "name": "Base i900s (urovo)\t\t",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "1800",
+    "enlace": "NULL"
+  },
+  {
+    "id": "656",
+    "name": "Diagnostico en Sitio (No incluye reparaciones)",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "288",
+    "enlace": "NULL"
+  },
+  {
+    "id": "657",
+    "name": "Servicio Básico en sitio (No incluye reparaciones)",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "346.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "658",
+    "name": "Servicio Intermedio en sitio (No incluye reparaciones)",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "718.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "659",
+    "name": "Servicio Avanzado en sitio (No incluye reparaciones)",
+    "descripcion": "NULL",
+    "supplier": "ANA STEFANY",
+    "price": "1078.8",
+    "enlace": "NULL"
+  },
+  {
+    "id": "660",
+    "name": "NODO DE CONTROL DE BOMBA ENCORE S PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "2340",
+    "enlace": "NULL"
+  },
+  {
+    "id": "661",
+    "name": "VALVULA SHUT OFF 2 OPW POPET DOBLE OPW PRECIO EN DÓLARES",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "373.5",
+    "enlace": "NULL"
+  },
+  {
+    "id": "662",
+    "name": "VERIFICACION  ELECTRICA NOM-001-SEDE-2012",
+    "descripcion": "NULL",
+    "supplier": "Arsadi",
+    "price": "18000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "663",
+    "name": "VALVULA DE SEGURIDAD 1/4\\\" CALIBRADA",
+    "descripcion": "NULL",
+    "supplier": "Arsadi",
+    "price": "1600",
+    "enlace": "NULL"
+  },
+  {
+    "id": "664",
+    "name": "Medición de espesores en  tanque de almacenamiento subterráneo",
+    "descripcion": "NULL",
+    "supplier": "IPROMER",
+    "price": "15950",
+    "enlace": "NULL"
+  },
+  {
+    "id": "665",
+    "name": "Pintura Amarillo Tráfico Cub 19 Lts.",
+    "descripcion": "NULL",
+    "supplier": "DIMESA",
+    "price": "2617",
+    "enlace": "NULL"
+  },
+  {
+    "id": "666",
+    "name": "Akron Resistance API SL SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "91.03",
+    "enlace": "NULL"
+  },
+  {
+    "id": "667",
+    "name": "Akron Resistance API SL SAE 25W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "434.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "668",
+    "name": "Akron Spitzen API SP SAE 5W-30",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "185.34",
+    "enlace": "NULL"
+  },
+  {
+    "id": "669",
+    "name": "Akron Spitzen API SP SAE 5W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "185.34",
+    "enlace": "NULL"
+  },
+  {
+    "id": "670",
+    "name": "Akron Premium PRO API SP SAE 5W-30",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "128.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "671",
+    "name": "Akron Premium PRO API SP SAE 10W-30",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "128.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "672",
+    "name": "Akron Premium PRO API SP SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "128.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "673",
+    "name": "Akron Premium API SP SAE 10W-30",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "86.21",
+    "enlace": "NULL"
+  },
+  {
+    "id": "674",
+    "name": "Akron Premium API SP SAE 10W-30",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "395.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "675",
+    "name": "Akron Premium API SP SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "86.21",
+    "enlace": "NULL"
+  },
+  {
+    "id": "676",
+    "name": "Akron Premium API SP SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "395.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "677",
+    "name": "Akron Premium API SP SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "86.21",
+    "enlace": "NULL"
+  },
+  {
+    "id": "678",
+    "name": "Akron Premium API SP SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "395.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "679",
+    "name": "Akron HD Intense API SL SAE 40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "92.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "680",
+    "name": "Akron HD Intense API SL SAE 40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "433.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "681",
+    "name": "Akron HD Intense API SL SAE 50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "92.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "682",
+    "name": "Akron HD Intense API SL SAE 50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "433.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "683",
+    "name": "Akron HD Intense API SJ SAE 60",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "92.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "684",
+    "name": "Extra Fleet SERIE III CH-4 SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "88.97",
+    "enlace": "NULL"
+  },
+  {
+    "id": "685",
+    "name": "Akron ATF III DEXRON/MERCON",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "95.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "686",
+    "name": "Akron ATF III DEXRON/MERCON",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "457.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "687",
+    "name": "Akron CVT",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "196.55",
+    "enlace": "NULL"
+  },
+  {
+    "id": "688",
+    "name": "Super Gear API GL1 SAE 90",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "84.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "689",
+    "name": "Super Gear API GL1 SAE 140",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "84.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "690",
+    "name": "Akron Marine TC-W3",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "101.38",
+    "enlace": "NULL"
+  },
+  {
+    "id": "691",
+    "name": "Akron Marine 4stroke SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "108.27",
+    "enlace": "NULL"
+  },
+  {
+    "id": "692",
+    "name": "Akron Marine 4stroke SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "108.27",
+    "enlace": "NULL"
+  },
+  {
+    "id": "693",
+    "name": "Akron ATF Universal TC-W3",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "143.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "694",
+    "name": "Akron ATF Universal TC-W3",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "679.31",
+    "enlace": "NULL"
+  },
+  {
+    "id": "695",
+    "name": "Akron Motorcycle 2T JASO FB",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "34.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "696",
+    "name": "Akron Motorcycle 2T JASO FB",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "100",
+    "enlace": "NULL"
+  },
+  {
+    "id": "697",
+    "name": "Akron Motocicletas 4T SAE 20W 50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "94.83",
+    "enlace": "NULL"
+  },
+  {
+    "id": "698",
+    "name": "Aditivo para Gasolina",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "34.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "699",
+    "name": "Desengrasante",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "560.62",
+    "enlace": "NULL"
+  },
+  {
+    "id": "700",
+    "name": "Limpiador de Inyectores",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "43.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "701",
+    "name": "Greenroad Gasolina",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "54.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "702",
+    "name": "Mejorador de Octanaje\t",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "68.27",
+    "enlace": "NULL"
+  },
+  {
+    "id": "703",
+    "name": "Super Tratamiento para Gasolina\t",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "151.03",
+    "enlace": "NULL"
+  },
+  {
+    "id": "704",
+    "name": "Aditivo para Diesel",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "130.34",
+    "enlace": "NULL"
+  },
+  {
+    "id": "705",
+    "name": "Greenroad Diesel",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "191.03",
+    "enlace": "NULL"
+  },
+  {
+    "id": "706",
+    "name": "Greenroad Diesel",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "54.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "707",
+    "name": "Desinfectante",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "97.41",
+    "enlace": "NULL"
+  },
+  {
+    "id": "708",
+    "name": "Fluído para Dirección Hidráulica",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "33.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "709",
+    "name": "Líquido para Frenos DOT 3",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "34.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "710",
+    "name": "Líquido para Frenos DOT 3",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "106.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "711",
+    "name": "Líquido para Frenos DOT 4",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "42.07",
+    "enlace": "NULL"
+  },
+  {
+    "id": "712",
+    "name": "Agua para Batería",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "15.86",
+    "enlace": "NULL"
+  },
+  {
+    "id": "713",
+    "name": "Líquido Limpiaparabrisas",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "33.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "714",
+    "name": "Anticongelante Listo para Usarse (33%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "44.14",
+    "enlace": "NULL"
+  },
+  {
+    "id": "715",
+    "name": "Anticongelante Listo para Usarse (33%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "152.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "716",
+    "name": "Anticongelante Concentrado Especial (66%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "272.42",
+    "enlace": "NULL"
+  },
+  {
+    "id": "717",
+    "name": "Anticongelante Concentrado (95%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "341.38",
+    "enlace": "NULL"
+  },
+  {
+    "id": "718",
+    "name": "Anticongelante Rosa (50%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "66.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "719",
+    "name": "Anticongelante Rosa (50%)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "240.69",
+    "enlace": "NULL"
+  },
+  {
+    "id": "720",
+    "name": "Lubrichain",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "101.72",
+    "enlace": "NULL"
+  },
+  {
+    "id": "721",
+    "name": "Arrancador para motor",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "73.28",
+    "enlace": "NULL"
+  },
+  {
+    "id": "722",
+    "name": "Aflojatodo HW\t",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "68.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "723",
+    "name": "Limp. Carburador\t",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "53.45",
+    "enlace": "NULL"
+  },
+  {
+    "id": "724",
+    "name": "Estudio de Pérdida  Máxima Probable por Tercero Autorizado Versión On line",
+    "descripcion": "NULL",
+    "supplier": "SICA",
+    "price": "33000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "725",
+    "name": "Cubierta Hexagonal varios colores",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "715",
+    "enlace": "NULL"
+  },
+  {
+    "id": "726",
+    "name": "Bote de Basura Verde NIP Nivel 2",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "1525",
+    "enlace": "NULL"
+  },
+  {
+    "id": "727",
+    "name": "Justificación técnica de los Límites de Responsabilidad RA y RC",
+    "descripcion": "NULL",
+    "supplier": "SICA",
+    "price": "17500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "728",
+    "name": "CONFORMACIÓN Y REGISTRO DE SASISOPA ON LINE",
+    "descripcion": "NULL",
+    "supplier": "siacorp",
+    "price": "22550",
+    "enlace": "NULL"
+  },
+  {
+    "id": "729",
+    "name": "BHL FUSIÓN SEMI-SYN,15W40 SP, 946 ML",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "730",
+    "name": "BHL FUSIÓN SEMI-SYN, 20W50 SP, 946 ML",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "731",
+    "name": "BHL FUS SEMI-SYN G. KM, 25W50 SP, 946 ML",
+    "descripcion": "NULL",
+    "supplier": "Bardahl",
+    "price": "96.23",
+    "enlace": "NULL"
+  },
+  {
+    "id": "732",
+    "name": "DISPENSARIO DE AIRE Y AGUA MANUAL",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "5775",
+    "enlace": "NULL"
+  },
+  {
+    "id": "733",
+    "name": "DISPENSARIO DE AIRE Y AGUA ELECTRÓNICO",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "13860",
+    "enlace": "NULL"
+  },
+  {
+    "id": "734",
+    "name": "TIRE LED VERDE 50 MTS",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "2625",
+    "enlace": "NULL"
+  },
+  {
+    "id": "735",
+    "name": "TIRA LED BLANCA 50 MTS",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "2625",
+    "enlace": "NULL"
+  },
+  {
+    "id": "736",
+    "name": "CABINA DE FACTURACIÓN",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "6825",
+    "enlace": "NULL"
+  },
+  {
+    "id": "737",
+    "name": "EXHIBIDOR DE ACEITES (PRECIO MAS ENVIO)",
+    "descripcion": "NULL",
+    "supplier": "SEM",
+    "price": "6825",
+    "enlace": "NULL"
+  },
+  {
+    "id": "738",
+    "name": "SL/CF SAE 40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "86.21",
+    "enlace": "NULL"
+  },
+  {
+    "id": "739",
+    "name": "SL/CF SAE 40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "399.31",
+    "enlace": "NULL"
+  },
+  {
+    "id": "740",
+    "name": "SL/CF SAE 50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "86.21",
+    "enlace": "NULL"
+  },
+  {
+    "id": "741",
+    "name": "SL/CF SAE 50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "399.31",
+    "enlace": "NULL"
+  },
+  {
+    "id": "742",
+    "name": "SL SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "93.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "743",
+    "name": "SL SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "433.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "744",
+    "name": "SL SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "93.1",
+    "enlace": "NULL"
+  },
+  {
+    "id": "745",
+    "name": "SL SAE 20W-50",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "433.79",
+    "enlace": "NULL"
+  },
+  {
+    "id": "746",
+    "name": "CH-4 Super 40 SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "88.97",
+    "enlace": "NULL"
+  },
+  {
+    "id": "747",
+    "name": "CH-4 Super 40 SAE 15W-40",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "417.24",
+    "enlace": "NULL"
+  },
+  {
+    "id": "748",
+    "name": "DEXRON II",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "85.52",
+    "enlace": "NULL"
+  },
+  {
+    "id": "749",
+    "name": "HIDRÁULICO MH-300 (ISO 68)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "344.83",
+    "enlace": "NULL"
+  },
+  {
+    "id": "750",
+    "name": "DOS TIEMPOS (DUAL)",
+    "descripcion": "NULL",
+    "supplier": "AKRON",
+    "price": "91.03",
+    "enlace": "NULL"
+  },
+  {
+    "id": "752",
+    "name": "Justificación técnica de los Límites de Responsabilidad RA y RC",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "9310.35",
+    "enlace": "NULL"
+  },
+  {
+    "id": "753",
+    "name": "ANALISIS DE RIESGO",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "6206.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "754",
+    "name": "Protocolo de Respuesta a Emergencias (PRE)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "6206.9",
+    "enlace": "NULL"
+  },
+  {
+    "id": "755",
+    "name": "Cédula de Operación Anual (Incluye su presentación al portal de SERMANAT)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "4800",
+    "enlace": "NULL"
+  },
+  {
+    "id": "756",
+    "name": "ELABORACIÓN DE SASISOPA (Incluye curso de capacitación para su implementación)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "18620.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "757",
+    "name": "DICTÁMEN SASISOPA (Incluye su ingreso en ASEA, seguimiento hasta su autorización)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "18620.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "758",
+    "name": "ELABORACIÓN DEL SISTEMA DE GESTIÓN DE MEDICIÓN SGM (CARPETA RAÍZ)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "6000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "759",
+    "name": "ELABORACIÓN DEL SISTEMA DE GESTIÓN DE MEDICIÓN SGM (IMPLEMENTADO A UN AÑO)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "7241.38",
+    "enlace": "NULL"
+  },
+  {
+    "id": "760",
+    "name": "INSPECCIÓN COMPLETA A LA ESTACIÓN (Incluye verificación y comprobación de las condiciones de operación, seguridad y documental; así como la entrega de reporte fotográfico y de hallazgos)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "18620.7",
+    "enlace": "NULL"
+  },
+  {
+    "id": "761",
+    "name": "CURSO DE CAPACITACIÓN EN LÍNEA ASEA/STPS/CRE (Incluye constancias DC-3 y diploma)",
+    "descripcion": "NULL",
+    "supplier": "NAES",
+    "price": "1800",
+    "enlace": "NULL"
+  },
+  {
+    "id": "762",
+    "name": "DESCARGA DE BITACORAS WAYNE POR DISPENSARIO (NO INCLUYE VIÁTICOS)",
+    "descripcion": "NULL",
+    "supplier": "HAMSE PLUS",
+    "price": "1200",
+    "enlace": "NULL"
+  },
+  {
+    "id": "763",
+    "name": "DESCARGA DE BITACORAS GILBARCO POR DISPENSARIO (NO INCLUYE VIÁTICOS)",
+    "descripcion": "NULL",
+    "supplier": "HAMSE PLUS",
+    "price": "1200",
+    "enlace": "NULL"
+  },
+  {
+    "id": "764",
+    "name": "PROGRAMA INTERNO DE PROTECCION CIVIL",
+    "descripcion": "NULL",
+    "supplier": "COSCIPE",
+    "price": "18000",
+    "enlace": "NULL"
+  },
+  {
+    "id": "765",
+    "name": "PROGRAMA INTERNO DE PROTECCIÓN CIVIL",
+    "descripcion": "NULL",
+    "supplier": "Asesoria Gestion",
+    "price": "17500",
+    "enlace": "NULL"
+  },
+  {
+    "id": "766",
+    "name": "PRUEBA DE LABORATORIO DIESEL",
+    "descripcion": "NULL",
+    "supplier": "CIEFSA",
+    "price": "2640",
+    "enlace": "NULL"
+  },
+  {
+    "id": "767",
+    "name": "PRUEBA DE LABORATARIO GASOLINA REGULAR MAGNA",
+    "descripcion": "NULL",
+    "supplier": "CIEFSA",
+    "price": "2640",
+    "enlace": "NULL"
+  },
+  {
+    "id": "768",
+    "name": "PRUEBA DE LABORATORIO  PREMIUM",
+    "descripcion": "NULL",
+    "supplier": "CIEFSA",
+    "price": "2640",
+    "enlace": "NULL"
+  },
+  {
+    "id": "769",
+    "name": "MEDIDOR GILBARCO E-300-500 (PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "936.48",
+    "enlace": "NULL"
+  },
+  {
+    "id": "770",
+    "name": "Válvula ultra alto flujo ( PRECIO EN DÓLARES)",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "1645.78",
+    "enlace": "NULL"
+  },
+  {
+    "id": "771",
+    "name": "Nodo control de bomba encore 500 (PRECIO EN DÓLARES?",
+    "descripcion": "NULL",
+    "supplier": "PETROGAS",
+    "price": "2223.53",
+    "enlace": "NULL"
+  },
+  {
+    "id": "772",
+    "name": "Calibración De Dispensario (Por Manguera)",
+    "descripcion": "NULL",
+    "supplier": "METROLOGIA",
+    "price": "285.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "773",
+    "name": "Limpieza Ecológica",
+    "descripcion": "NULL",
+    "supplier": "METROLOGIA",
+    "price": "3849.6",
+    "enlace": "NULL"
+  },
+  {
+    "id": "774",
+    "name": "LIMPIEZA ECOLÓGICA",
+    "descripcion": "NULL",
+    "supplier": "SETERR",
+    "price": "4860",
+    "enlace": "NULL"
+  },
+  {
+    "id": "775",
+    "name": "PRUEBA DE LABORATORIO",
+    "descripcion": "NULL",
+    "supplier": "METROLOGIA",
+    "price": "2661.6",
+    "enlace": "NULL"
+  }
+]
