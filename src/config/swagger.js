@@ -32,6 +32,7 @@ const options = {
                         price: { type: 'number', example: 199.99 },
                         stock: { type: 'integer', example: 50 },
                         url: { type: 'string', example: 'https://ejemplo.com/producto.jpg' },
+                        supplier: { type: 'string', example: 'Quaker' },
                         createdAt: { type: 'string', format: 'date-time' },
                         updatedAt: { type: 'string', format: 'date-time' }
                     }
@@ -43,7 +44,8 @@ const options = {
                         description: { type: 'string', example: 'Aceite sintético para motor' },
                         price: { type: 'number', example: 199.99 },
                         stock: { type: 'integer', example: 50 },
-                        url: { type: 'string', example: 'https://ejemplo.com/producto.jpg' }
+                        url: { type: 'string', example: 'https://ejemplo.com/producto.jpg' },
+                        supplier: { type: 'string', example: 'Quaker' }
                     },
                     required: ['name', 'price', 'stock']
                 }

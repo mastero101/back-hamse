@@ -18,7 +18,8 @@ module.exports = {
       name: p.name,
       description: (p.descripcion && p.descripcion !== 'NULL') ? p.descripcion : '',
       price: Number(p.price) || 0,
-      stock: 0, // Puedes poner un valor por defecto o agregarlo si tienes ese dato
+      stock: 0,
+      supplier: p.supplier || p.proveedor || '',
       createdAt: now,
       updatedAt: now
     }));

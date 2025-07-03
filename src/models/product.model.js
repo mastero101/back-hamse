@@ -22,6 +22,10 @@ const Product = sequelize.define('Product', {
         type: Sequelize.INTEGER,
         allowNull: false
     },
+    supplier: {
+        type: Sequelize.STRING,
+        allowNull: true
+    },
     url: {
         type: Sequelize.STRING,
         allowNull: true
