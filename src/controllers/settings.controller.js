@@ -43,6 +43,49 @@ const settingsController = {
             console.error('Error updating WhatsApp number:', error);
             res.status(500).json({ message: 'Error al actualizar el número de WhatsApp.' });
         }
+    },
+
+    // Obtener cualquier setting por key
+    getSettingByKey: async (req, res) => {
+        const { key } = req.params;
+        if (!key) {
+            return res.status(400).json({ message: 'Key requerida.' });
+        }
+        try {
+            const setting = await Setting.findByPk(key);
+            if (!setting) {
+                return res.status(404).json({ message: 'Setting no encontrada.' });
+            }
+            res.json({ key: setting.key, value: setting.value });
+        } catch (error) {
+            console.error('Error al obtener setting:', error);
+            res.status(500).json({ message: 'Error al obtener setting.' });
+        }
+    },
+
+    // Actualizar cualquier setting por key (solo admin)
+    updateSettingByKey: async (req, res) => {
+        const { key } = req.params;
+        const { value } = req.body;
+        if (!key) {
+            return res.status(400).json({ message: 'Key requerida.' });
+        }
+        if (typeof value === 'undefined') {
+            return res.status(400).json({ message: 'Value requerido.' });
+        }
+        try {
+            let setting = await Setting.findByPk(key);
+            if (!setting) {
+                setting = await Setting.create({ key, value });
+            } else {
+                setting.value = value;
+                await setting.save();
+            }
+            res.json({ message: 'Setting actualizada correctamente.', key, value });
+        } catch (error) {
+            console.error('Error al actualizar setting:', error);
+            res.status(500).json({ message: 'Error al actualizar setting.' });
+        }
     }
 };
 

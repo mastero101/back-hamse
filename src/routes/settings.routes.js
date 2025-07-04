@@ -64,4 +64,10 @@ router.get('/whatsapp', settingsController.getWhatsappNumber);
  */
 router.put('/whatsapp', [verifyToken, isAdmin], settingsController.updateWhatsappNumber);
 
+// Obtener cualquier setting por key (público)
+router.get('/:key', settingsController.getSettingByKey);
+
+// Actualizar cualquier setting por key (solo admin)
+router.put('/:key', [verifyToken, isAdmin], settingsController.updateSettingByKey);
+
 module.exports = router;
