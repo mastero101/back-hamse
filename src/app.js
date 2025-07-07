@@ -4,16 +4,36 @@ const os = require('os');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpecs = require('./config/swagger');
 const { sequelize, initializeDatabase } = require('./config/database');
+const { corsOptions, corsMiddleware } = require('./config/cors.config');
 require('dotenv').config();
 
 const app = express();
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors(corsOptions));
+app.use(corsMiddleware);
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+
+// Middleware de logging para debugging CORS
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.path} - Origin: ${req.headers.origin || 'No origin'} - User-Agent: ${req.headers['user-agent'] || 'No user-agent'}`);
+  next();
+});
 
 // Swagger documentation route
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
+
+// Endpoint de prueba para CORS
+app.get('/api/test-cors', (req, res) => {
+  res.json({
+    message: 'CORS está funcionando correctamente',
+    timestamp: new Date().toISOString(),
+    origin: req.headers.origin || 'No origin',
+    method: req.method,
+    headers: req.headers
+  });
+});
 
 // Import routes
 const authRoutes = require('./routes/auth.routes');
@@ -351,6 +371,7 @@ app.use('/api/uploads', uploadRoutes);
 
 const PORT = process.env.PORT || 3000;
 
+// Función para inicializar el servidor
 const startServer = async () => {
     try {
         await initializeDatabase();
@@ -363,4 +384,10 @@ const startServer = async () => {
     }
 };
 
-startServer();
+// Exportar la app para Vercel
+module.exports = app;
+
+// Iniciar servidor solo si no estamos en Vercel
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+    startServer();
+}

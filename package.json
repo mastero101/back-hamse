@@ -7,11 +7,14 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
     "test": "jest",
+    "test-cors": "node test-cors.js",
+    "update-aws": "node update-dependencies.js",
     "build": "npm install",
     "vercel-build": "npm install"
   },
   "dependencies": {
-    "aws-sdk": "^2.1692.0",
+    "@aws-sdk/client-s3": "^3.490.0",
+    "@aws-sdk/s3-request-presigner": "^3.490.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "csv-parser": "^3.2.0",
