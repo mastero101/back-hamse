@@ -357,7 +357,10 @@ const scheduleController = {
             if (totalActivities > 0) {
                 activities.forEach(activity => {
                     const relevantStatus = activity.Statuses?.[0];
-                    if (relevantStatus && relevantStatus.state === 'completed') {
+                    if (
+                        relevantStatus &&
+                        (relevantStatus.state === 'completed' || relevantStatus.state === 'not_applicable')
+                    ) {
                         completedCount++;
                     }
                 });
@@ -522,8 +525,11 @@ const scheduleController = {
 
             if (totalActivities > 0) {
                 activitiesWithUpdatedStatus.forEach(activity => {
-                    const relevantStatus = activity.Statuses?.[0]; // Asumiendo que solo hay un Status por Activity/Schedule
-                    if (relevantStatus && relevantStatus.state === 'completed') {
+                    const relevantStatus = activity.Statuses?.[0];
+                    if (
+                        relevantStatus &&
+                        (relevantStatus.state === 'completed' || relevantStatus.state === 'not_applicable')
+                    ) {
                         completedCount++;
                     }
                 });
