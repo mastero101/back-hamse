@@ -23,16 +23,26 @@ const requirementController = {
 
             const processedRequirements = requirements.map(req => {
                 const data = req.toJSON();
-                try {
-                    data.reminderDates = data.reminderDates ? JSON.parse(data.reminderDates) : [];
-                } catch (e) {
-                    console.error('Error parseando reminderDates:', e, data.reminderDates);
+                // Si el campo es string (por datos viejos), conviértelo a array
+                if (typeof data.reminderDates === 'string') {
+                    try {
+                        data.reminderDates = JSON.parse(data.reminderDates);
+                    } catch {
+                        data.reminderDates = [];
+                    }
+                }
+                if (!Array.isArray(data.reminderDates)) {
                     data.reminderDates = [];
                 }
-                try {
-                    data.providers = data.providers ? JSON.parse(data.providers) : [];
-                } catch (e) {
-                    console.error('Error parseando providers:', e, data.providers);
+
+                if (typeof data.providers === 'string') {
+                    try {
+                        data.providers = JSON.parse(data.providers);
+                    } catch {
+                        data.providers = [];
+                    }
+                }
+                if (!Array.isArray(data.providers)) {
                     data.providers = [];
                 }
                 return data;
@@ -82,39 +92,14 @@ const requirementController = {
             const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDates', 'providers'];
             const updates = {};
             allowedUpdates.forEach(field => {
-                if (req.body.hasOwnProperty(field)) {
-                    if (field === 'reminderDates' && Array.isArray(req.body.reminderDates)) {
-                        updates.reminderDates = JSON.stringify(req.body.reminderDates);
-                    } else if (field === 'providers' && Array.isArray(req.body.providers)) {
-                        updates.providers = JSON.stringify(req.body.providers);
-                    } else {
-                        updates[field] = req.body[field];
-                    }
-                }
+                updates[field] = req.body[field];
             });
 
             await requirement.update(updates);
 
-            // Procesar reminderDates y providers para devolverlos como array
             const data = requirement.toJSON();
-            if (data.reminderDates) {
-                try {
-                    data.reminderDates = JSON.parse(data.reminderDates);
-                } catch {
-                    data.reminderDates = [];
-                }
-            } else {
-                data.reminderDates = [];
-            }
-            if (data.providers) {
-                try {
-                    data.providers = JSON.parse(data.providers);
-                } catch {
-                    data.providers = [];
-                }
-            } else {
-                data.providers = [];
-            }
+            data.reminderDates = data.reminderDates || [];
+            data.providers = data.providers || [];
 
             return res.json({
                 status: 'success',

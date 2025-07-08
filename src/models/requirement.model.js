@@ -43,7 +43,7 @@ const Requirement = sequelize.define('Requirement', {
         allowNull: false
     },
     reminderDates: {
-        type: Sequelize.TEXT,
+        type: Sequelize.ARRAY(Sequelize.DATE),
         allowNull: true
     },
     respaldo: {
@@ -51,8 +51,9 @@ const Requirement = sequelize.define('Requirement', {
         allowNull: true
     },
     providers: {
-        type: Sequelize.TEXT,
-        allowNull: true
+        type: Sequelize.JSONB,
+        allowNull: true,
+        defaultValue: []
     }
 });
 

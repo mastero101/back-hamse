@@ -45,7 +45,7 @@ const initializeDatabase = async () => {
         const Product = require('../models/product.model');
 
         // Sync without forcing recreation of tables
-        await sequelize.sync({ force: false, alter: true });
+        //await sequelize.sync();
         console.log('Database models synchronized.');
 
         // Check if admin exists before creating
