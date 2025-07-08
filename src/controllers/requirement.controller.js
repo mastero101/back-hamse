@@ -17,30 +17,22 @@ const requirementController = {
         try {
             const { dependency } = req.query;
             const where = dependency ? { dependency } : {};
-            
             const requirements = await Requirement.findAll({ where });
 
-            // Procesar reminderDates y providers para devolverlos como array
+            console.log('Requirements encontrados:', requirements.length);
+
             const processedRequirements = requirements.map(req => {
                 const data = req.toJSON();
-                // reminderDates
-                if (data.reminderDates) {
-                    try {
-                        data.reminderDates = JSON.parse(data.reminderDates);
-                    } catch {
-                        data.reminderDates = [];
-                    }
-                } else {
+                try {
+                    data.reminderDates = data.reminderDates ? JSON.parse(data.reminderDates) : [];
+                } catch (e) {
+                    console.error('Error parseando reminderDates:', e, data.reminderDates);
                     data.reminderDates = [];
                 }
-                // providers
-                if (data.providers) {
-                    try {
-                        data.providers = JSON.parse(data.providers);
-                    } catch {
-                        data.providers = [];
-                    }
-                } else {
+                try {
+                    data.providers = data.providers ? JSON.parse(data.providers) : [];
+                } catch (e) {
+                    console.error('Error parseando providers:', e, data.providers);
                     data.providers = [];
                 }
                 return data;
@@ -51,6 +43,7 @@ const requirementController = {
                 data: processedRequirements
             });
         } catch (error) {
+            console.error('Error en getRequirements:', error);
             return res.status(500).json({
                 status: 'error',
                 message: error.message
