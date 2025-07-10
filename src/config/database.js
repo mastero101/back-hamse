@@ -43,10 +43,11 @@ const initializeDatabase = async () => {
         const Requirement = require('../models/requirement.model');
         // Importar el modelo Product
         const Product = require('../models/product.model');
+        // Importar el modelo AuditLog
+        const AuditLog = require('../models/auditLog.model')(sequelize);
 
         // Sync without forcing recreation of tables
-        //await sequelize.sync();
-        console.log('Database models synchronized.');
+        await sequelize.sync();
 
         // Check if admin exists before creating
         const adminExists = await User.findOne({ where: { username: 'admin' } });

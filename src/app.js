@@ -44,6 +44,7 @@ const settingsRoutes = require('./routes/settings.routes');
 const requirementRoutes = require('./routes/requirement.routes');
 const productRoutes = require('./routes/product.routes');
 const uploadRoutes = require('./routes/upload.routes');
+const auditLogRoutes = require('./routes/auditLog.routes');
 
 // Routes
 // Función para obtener el uso de memoria
@@ -368,6 +369,7 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/requirements', requirementRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/uploads', uploadRoutes);
+app.use('/api/audit-logs', auditLogRoutes);
 
 const PORT = process.env.PORT || 3000;
 
@@ -389,5 +391,5 @@ module.exports = app;
 
 // Iniciar servidor solo si no estamos en Vercel
 if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
-    startServer();
+startServer();
 }

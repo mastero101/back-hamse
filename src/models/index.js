@@ -5,6 +5,7 @@ const Status = require('./status.model');
 const Report = require('./report.model');
 const Setting = require('./setting.model');
 const ActivitySchedule = require('./activitySchedule.model');
+const AuditLog = require('./auditLog.model');
 
 // Activity <-> Schedule (Many-to-Many)
 Activity.belongsToMany(Schedule, { through: ActivitySchedule, foreignKey: 'activityId' });
@@ -37,5 +38,6 @@ module.exports = {
     Status,
     Report,
     Setting,
-    ActivitySchedule
+    ActivitySchedule,
+    AuditLog
 };
