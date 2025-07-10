@@ -5,7 +5,9 @@ const Status = require('./status.model');
 const Report = require('./report.model');
 const Setting = require('./setting.model');
 const ActivitySchedule = require('./activitySchedule.model');
-const AuditLog = require('./auditLog.model');
+
+const sequelize = require('../config/database').sequelize;
+const AuditLog = require('./auditLog.model')(sequelize);
 
 // Activity <-> Schedule (Many-to-Many)
 Activity.belongsToMany(Schedule, { through: ActivitySchedule, foreignKey: 'activityId' });
