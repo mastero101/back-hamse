@@ -1,4 +1,5 @@
 const { AuditLog } = require('../models');
+const { Op } = require('sequelize');
 
 // Crear un registro de auditoría
 exports.createAuditLog = async (req, res) => {
@@ -33,8 +34,8 @@ exports.getAuditLogs = async (req, res) => {
     if (scheduleId) where.scheduleId = scheduleId;
     if (from || to) {
       where.timestamp = {};
-      if (from) where.timestamp['$gte'] = new Date(from);
-      if (to) where.timestamp['$lte'] = new Date(to);
+      if (from) where.timestamp[Op.gte] = new Date(from);
+      if (to) where.timestamp[Op.lte] = new Date(to);
     }
     const logs = await AuditLog.findAll({
       where,
