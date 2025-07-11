@@ -79,12 +79,13 @@ const scheduleController = {
     findAll: async (req, res) => {
         try {
             const schedules = await Schedule.findAll({
+                where: { assignedTo: req.userId },
                 include: [
                     {
                         model: Activity,
-                        through: { // Incluir datos de la tabla intermedia
+                        through: {
                             model: ActivitySchedule,
-                            attributes: ['programStates'] // Especificar el campo a incluir
+                            attributes: ['programStates']
                         },
                         include: [{
                             model: Status,
