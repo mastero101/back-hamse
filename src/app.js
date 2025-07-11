@@ -5,6 +5,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerSpecs = require('./config/swagger');
 const { sequelize, initializeDatabase } = require('./config/database');
 const { corsOptions, corsMiddleware } = require('./config/cors.config');
+const { AuditLog } = require('./models');
+const { Op } = require('sequelize');
 require('dotenv').config();
 
 const app = express();
@@ -53,6 +55,29 @@ const getMemoryUsage = () => {
     const used = process.memoryUsage();
     return Math.round(used.heapUsed / 1024 / 1024 * 100) / 100;
 };
+
+// Función para eliminar logs anteriores a 2 meses
+async function cleanOldAuditLogs() {
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - 2);
+  try {
+    const deleted = await AuditLog.destroy({
+      where: {
+        timestamp: { [Op.lt]: cutoff }
+      }
+    });
+    if (deleted > 0) {
+      console.log(`[AUDIT] Eliminados ${deleted} logs anteriores a ${cutoff.toISOString()}`);
+    }
+  } catch (error) {
+    console.error('[AUDIT] Error al limpiar logs antiguos:', error);
+  }
+}
+
+// Ejecutar la limpieza cada 24 horas (86,400,000 ms)
+setInterval(cleanOldAuditLogs, 24 * 60 * 60 * 1000);
+// Ejecutar una vez al iniciar el servidor
+cleanOldAuditLogs();
 
 // Ruta principal mejorada con estado del servidor y página HTML
 app.get('/', async (req, res) => {
