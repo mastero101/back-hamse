@@ -54,6 +54,14 @@ const Requirement = sequelize.define('Requirement', {
         type: Sequelize.JSONB,
         allowNull: true,
         defaultValue: []
+    },
+    userId: {
+        type: Sequelize.UUID,
+        allowNull: true,
+        references: {
+            model: 'Users',
+            key: 'id'
+        }
     }
 });
 

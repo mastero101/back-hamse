@@ -42,6 +42,7 @@ const scheduleRoutes = require('./routes/schedule.routes');
 const reportRoutes = require('./routes/report.routes');
 const settingsRoutes = require('./routes/settings.routes');
 const requirementRoutes = require('./routes/requirement.routes');
+const userRequirementRoutes = require('./routes/userRequirement.routes');
 const productRoutes = require('./routes/product.routes');
 const uploadRoutes = require('./routes/upload.routes');
 const auditLogRoutes = require('./routes/auditLog.routes');
@@ -370,6 +371,7 @@ app.use('/api/requirements', requirementRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/uploads', uploadRoutes);
 app.use('/api/audit-logs', auditLogRoutes);
+app.use('/api/user-requirements', userRequirementRoutes);
 
 const PORT = process.env.PORT || 3000;
 

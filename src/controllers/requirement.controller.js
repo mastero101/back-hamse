@@ -1,5 +1,6 @@
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const Requirement = require('../models/requirement.model'); // Importar directamente el modelo
+const { Op } = require('sequelize');
 
 // Configura tus credenciales y región de AWS
 const s3Client = new S3Client({
@@ -17,7 +18,14 @@ const requirementController = {
         try {
             const { dependency } = req.query;
             const where = dependency ? { dependency } : {};
-            const requirements = await Requirement.findAll({ where });
+            const requirements = await Requirement.findAll({
+                where: {
+                    [Op.or]: [
+                        { userId: null },
+                        { userId: req.userId }
+                    ]
+                }
+            });
 
             console.log('Requirements encontrados:', requirements.length);
 
@@ -63,7 +71,7 @@ const requirementController = {
 
     createRequirement: async (req, res) => {
         try {
-            const requirement = await Requirement.create(req.body);
+            const requirement = await Requirement.create({ ...req.body, userId: req.userId });
             
             return res.status(201).json({
                 status: 'success',
@@ -87,6 +95,10 @@ const requirementController = {
                     status: 'error',
                     message: 'Requirement not found'
                 });
+            }
+
+            if (requirement.userId !== req.userId) {
+                return res.status(403).json({ status: 'error', message: 'No autorizado' });
             }
 
             const allowedUpdates = ['title', 'description', 'periodicity', 'period', 'completed', 'videoUrl', 'hasProvidersButton', 'subTitle', 'dependency', 'reminderDates', 'providers'];
@@ -140,6 +152,10 @@ const requirementController = {
             const requirement = await Requirement.findByPk(id);
             if (!requirement) {
                 return res.status(404).json({ status: 'error', message: 'Requirement not found' });
+            }
+
+            if (requirement.userId !== req.userId) {
+                return res.status(403).json({ status: 'error', message: 'No autorizado' });
             }
 
             requirement.respaldo = respaldo;

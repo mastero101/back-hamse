@@ -1,3 +1,5 @@
+const sequelize = require('../config/database').sequelize;
+
 const User = require('./user.model');
 const Activity = require('./activity.model');
 const Schedule = require('./schedule.model');
@@ -5,8 +7,8 @@ const Status = require('./status.model');
 const Report = require('./report.model');
 const Setting = require('./setting.model');
 const ActivitySchedule = require('./activitySchedule.model');
-
-const sequelize = require('../config/database').sequelize;
+const Requirement = require('./requirement.model');
+const UserRequirement = require('./userRequirement.model')(sequelize);
 const AuditLog = require('./auditLog.model')(sequelize);
 
 // Activity <-> Schedule (Many-to-Many)
@@ -33,6 +35,18 @@ Status.belongsTo(User, { foreignKey: 'verifiedBy' });
 User.hasMany(Report, { foreignKey: 'generatedBy' });
 Report.belongsTo(User, { foreignKey: 'generatedBy' });
 
+// User -> Requirement (One-to-Many)
+User.hasMany(Requirement, { foreignKey: 'userId' });
+Requirement.belongsTo(User, { foreignKey: 'userId' });
+
+// User <-> UserRequirement (One-to-Many)
+User.hasMany(UserRequirement, { foreignKey: 'userId' });
+UserRequirement.belongsTo(User, { foreignKey: 'userId' });
+
+// Requirement <-> UserRequirement (One-to-Many)
+Requirement.hasMany(UserRequirement, { foreignKey: 'requirementId' });
+UserRequirement.belongsTo(Requirement, { foreignKey: 'requirementId' });
+
 module.exports = {
     User,
     Activity,
@@ -41,5 +55,7 @@ module.exports = {
     Report,
     Setting,
     ActivitySchedule,
-    AuditLog
+    Requirement,
+    AuditLog,
+    UserRequirement
 };
