@@ -8,6 +8,13 @@ const s3Client = new S3Client({
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  },
+  // Configuración optimizada para archivos grandes
+  requestHandler: {
+    httpOptions: {
+      timeout: 300000, // 5 minutos para archivos grandes
+      connectTimeout: 60000 // 1 minuto para conexión
+    }
   }
 });
 

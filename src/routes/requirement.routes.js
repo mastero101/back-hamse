@@ -2,7 +2,13 @@ const router = require('express').Router();
 const requirementController = require('../controllers/requirement.controller');
 const { verifyToken } = require('../middleware/auth.jwt');
 const multer = require('multer');
-const upload = multer({ storage: multer.memoryStorage() });
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 50 * 1024 * 1024, // 50MB en bytes
+    files: 1
+  }
+});
 
 /**
  * @swagger
