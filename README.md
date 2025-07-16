@@ -171,10 +171,7 @@ back-hamse/
 - POST /api/audit-logs - Crear log de auditoría
 
 ### Subida de archivos
-- POST /api/upload - Subir archivo (solo admin)
+- POST /api/upload - Subir archivo
 
 ## Documentación
 La documentación completa de la API está disponible en /api-docs cuando el servidor está en ejecución.
-
-## Licencia
-Este proyecto está bajo la Licencia MIT.
