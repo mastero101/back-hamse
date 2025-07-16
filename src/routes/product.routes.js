@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const productController = require('../controllers/product.controller');
+const { verifyToken, isAdmin } = require('../middleware/auth.jwt');
 
 /**
  * @swagger
@@ -129,5 +130,46 @@ router.put('/:id', productController.updateProduct);
  *         description: Producto no encontrado
  */
 router.delete('/:id', productController.deleteProduct);
+
+/**
+ * @swagger
+ * /api/products/sync-prices:
+ *   post:
+ *     summary: Sincroniza precios y enlaces de productos desde la URL externa
+ *     tags: [Productos]
+ *     responses:
+ *       200:
+ *         description: Resumen de la sincronización
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                 updated:
+ *                   type: integer
+ *                 notFound:
+ *                   type: array
+ *                   items:
+ *                     type: integer
+ *                 errors:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: integer
+ *                       error:
+ *                         type: string
+ *               example:
+ *                 message: 'Sincronización completada'
+ *                 updated: 5
+ *                 notFound: [1, 2]
+ *                 errors: [{ id: 3, error: 'Producto no encontrado' }]
+ *       500:
+ *         description: Error al sincronizar productos
+ */
+router.post('/sync-prices', [verifyToken, isAdmin], productController.syncProductPrices);
 
 module.exports = router; 

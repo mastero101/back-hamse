@@ -1,4 +1,5 @@
 const Product = require('../models/product.model');
+const axios = require('axios');
 
 // Obtener todos los productos
 exports.getAllProducts = async (req, res) => {
@@ -54,5 +55,53 @@ exports.deleteProduct = async (req, res) => {
     res.json({ message: 'Producto eliminado correctamente' });
   } catch (error) {
     res.status(500).json({ error: 'Error al eliminar el producto', details: error.message });
+  }
+};
+
+// Sincronizar precios y enlaces desde la API externa
+exports.syncProductPrices = async (req, res) => {
+  const EXTERNAL_URL = 'https://www.hamse.mx/html/api/products.php?api_key=HAMSE-5b8e6d9f2c1a4e7d3f6b9a8c5d2e1f0';
+  try {
+    const response = await axios.get(EXTERNAL_URL);
+    const externalProducts = response.data;
+
+    let updated = 0;
+    let notFound = [];
+    let errors = [];
+    const total = externalProducts.length;
+
+    console.log(`[SYNC] Sincronizando 0/${total} productos...`);
+
+    for (let i = 0; i < total; i++) {
+      const extProd = externalProducts[i];
+      try {
+        const localProd = await Product.findByPk(extProd.id);
+        if (localProd) {
+          await localProd.update({
+            price: extProd.price,
+            url: extProd.enlace
+          });
+          updated++;
+        } else {
+          notFound.push(extProd.id);
+        }
+      } catch (err) {
+        errors.push({ id: extProd.id, error: err.message });
+      }
+      if ((i + 1) % 25 === 0 || i === total - 1) {
+        console.log(`[SYNC] Sincronizando ${i + 1}/${total} productos...`);
+      }
+    }
+
+    console.log(`[SYNC] Sincronización completada. Actualizados: ${updated}, No encontrados: ${notFound.length}, Errores: ${errors.length}`);
+    res.json({
+      message: 'Sincronización completada',
+      updated,
+      notFound,
+      errors
+    });
+  } catch (error) {
+    console.error('[SYNC] Error al sincronizar productos:', error.message);
+    res.status(500).json({ error: 'Error al sincronizar productos', details: error.message });
   }
 }; 
