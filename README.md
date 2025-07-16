@@ -33,15 +33,27 @@ npm install
  ```
 
 3. Configurar variables de entorno:
-   Crear un archivo .env en la raíz del proyecto con:
-```plaintext
-DATABASE_URL=postgres://username:password@host:port/hamse
+
+Crea un archivo `.env` en la raíz del proyecto backend con el siguiente formato y ajusta los valores según tu entorno:
+
+```
+DATABASE_URL=postgres://usuario:contraseña@host:puerto/nombre_basedatos
 PORT=1072
- ```
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=
+AWS_S3_BUCKET=
+```
+
+- **DATABASE_URL**: Cadena de conexión a tu base de datos PostgreSQL. Ejemplo:
+  - `postgres://miusuario:miclave@localhost:5432/hamse`
+- **PORT**: Puerto donde se ejecutará el backend (por defecto 1072).
+- **AWS_ACCESS_KEY_ID**, **AWS_SECRET_ACCESS_KEY**, **AWS_REGION**, **AWS_S3_BUCKET**: Solo si usas almacenamiento en AWS S3, de lo contrario puedes dejarlas vacías.
 
 4. Iniciar el servidor:
 ```bash
-npm run dev
+npm run dev 
+nodemon
  ```
 
 ## Estructura del Proyecto
@@ -73,7 +85,6 @@ back-hamse/
 ├── package.json
 └── README.md
  ```
-```
 
 ## API Endpoints
 ### Autenticación
