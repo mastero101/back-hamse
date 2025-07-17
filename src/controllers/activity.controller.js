@@ -33,28 +33,33 @@ const activityController = {
 
     // Get all activities with pagination
     findAll: async (req, res) => {
-        const { page, size, category } = req.query; // Extraer category de req.query
-        const { limit, offset } = getPagination(page, size);
+        const { page = 1, size = 20, category } = req.query;
+        const limit = Math.min(+size, 50); // Limita el tamaño máximo de página a 50
+        const offset = (page - 1) * limit;
 
         try {
-            const whereClause = {}; // Inicializar cláusula where
+            const whereClause = {};
             if (category) {
-                whereClause.category = category; // Añadir filtro de categoría si existe
+                whereClause.category = category;
             }
 
             const data = await Activity.findAndCountAll({
-                where: whereClause, // Usar la cláusula where
+                where: whereClause,
                 limit,
                 offset,
-                include: [{
-                    model: Status,
-                    attributes: ['state', 'completedAt'],
-                    required: false // Cambiado a false para que sea un LEFT JOIN y no excluya actividades sin Status
-                }],
-                order: [
-                    ['createdAt', 'DESC']
-                ]
+                attributes: ['id', 'name', 'frequency', 'category', 'priority'], // Solo los campos necesarios
+                order: [['createdAt', 'DESC']]
             });
+
+            const totalPages = Math.ceil(data.count / limit);
+            // Si la página solicitada es mayor al total, devuelve vacío
+            if (page > totalPages) {
+                return res.status(200).json({
+                    success: true,
+                    message: 'No hay más actividades.',
+                    data: { totalItems: data.count, items: [], totalPages, currentPage: page }
+                });
+            }
 
             const response = getPagingData(data, page, limit);
             return res.status(200).json({
