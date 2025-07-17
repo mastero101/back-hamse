@@ -373,16 +373,13 @@ app.use('/api/uploads', uploadRoutes);
 app.use('/api/audit-logs', auditLogRoutes);
 app.use('/api/user-requirements', userRequirementRoutes);
 
-const PORT = process.env.PORT || 1072;
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`);
-});
+const PORT = process.env.PORT || 3000;
 
 // Función para inicializar el servidor
 const startServer = async () => {
     try {
         await initializeDatabase();
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log(`Server is running on port ${PORT}`);
         });
     } catch (error) {
