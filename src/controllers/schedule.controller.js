@@ -77,9 +77,15 @@ const scheduleController = {
     },
 
     findAll: async (req, res) => {
+        const { page = 1, size = 10 } = req.query;
+        const limit = parseInt(size);
+        const offset = (parseInt(page) - 1) * limit;
+
         try {
-            const schedules = await Schedule.findAll({
+            const { count, rows: schedules } = await Schedule.findAndCountAll({
                 where: { assignedTo: req.userId },
+                limit,
+                offset,
                 include: [
                     {
                         model: Activity,
@@ -97,7 +103,8 @@ const scheduleController = {
                         model: User,
                         attributes: ['id', 'username']
                     }
-                ]
+                ],
+                order: [['startDate', 'DESC']]
             });
 
             // Formatear la respuesta para incluir programStates directamente en la actividad
@@ -120,7 +127,11 @@ const scheduleController = {
 
             return res.json({
                 status: 'success',
-                data: formattedSchedules
+                data: formattedSchedules,
+                total: count,
+                page: parseInt(page),
+                size: limit,
+                totalPages: Math.ceil(count / limit)
             });
         } catch (error) {
             console.error('Error finding all schedules:', error);
