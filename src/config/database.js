@@ -12,6 +12,7 @@ const dbUrl = process.env.DATABASE_URL.includes('hamse')
     ? process.env.DATABASE_URL 
     : `${process.env.DATABASE_URL.replace(/\/[^/]*$/, '')}/hamse`;
 
+// 👇 CONFIGURACIÓN OPTIMIZADA PARA RDS
 const config = {
     dialect: 'postgres',
     dialectModule: require('pg'),
@@ -20,16 +21,81 @@ const config = {
         ssl: {
             require: true,
             rejectUnauthorized: false
-        }
+        },
+        // 👇 TIMEOUTS ESPECÍFICOS PARA RDS
+        connectTimeout: 60000, // 60 segundos para conectar
+        requestTimeout: 30000, // 30 segundos para consultas
+        keepAlive: true,
+        keepAliveInitialDelayMillis: 0,
     },
-    logging: false
+    // 👇 CONFIGURACIÓN DE POOL CRÍTICA
+    pool: {
+        max: 5,          // ⬇️ MÁXIMO 5 conexiones concurrentes
+        min: 1,          // ⬇️ MÍNIMO 1 conexión siempre activa
+        acquire: 60000,  // ⬇️ 60 segundos máximo para obtener conexión
+        idle: 30000,     // ⬇️ 30 segundos antes de cerrar conexión inactiva
+        evict: 60000,    // ⬇️ 60 segundos para verificar conexiones
+        handleDisconnects: true
+    },
+    // 👇 CONFIGURACIÓN ADICIONAL PARA ESTABILIDAD
+    retry: {
+        max: 3,          // Máximo 3 reintentos
+        match: [         // Reintentar en estos errores
+            /ConnectionError/,
+            /ConnectionRefusedError/,
+            /ConnectionTimedOutError/,
+            /TimeoutError/,
+            /SequelizeConnectionError/,
+            /SequelizeConnectionRefusedError/,
+            /SequelizeHostNotFoundError/,
+            /SequelizeHostNotReachableError/,
+            /SequelizeInvalidConnectionError/,
+            /SequelizeConnectionTimedOutError/
+        ]
+    },
+    logging: process.env.NODE_ENV === 'development' ? console.log : false, // Solo logs en desarrollo
+    benchmark: false // Deshabilitar benchmark para mejor performance
 };
 
 const sequelize = new Sequelize(dbUrl, config);
 
-const initializeDatabase = async () => {
+// 👇 AGREGAR MANEJO DE EVENTOS DE CONEXIÓN
+sequelize.addHook('beforeConnect', (config) => {
+    console.log('Attempting to connect to database...');
+});
+
+sequelize.addHook('afterConnect', (connection, config) => {
+    console.log('Successfully connected to database');
+});
+
+sequelize.addHook('beforeDisconnect', (connection) => {
+    console.log('Disconnecting from database...');
+});
+
+// 👇 FUNCIÓN PARA VERIFICAR ESTADO DE CONEXIONES
+const checkConnectionHealth = async () => {
     try {
         await sequelize.authenticate();
+        const poolInfo = sequelize.connectionManager.pool;
+        console.log(`Pool status - Active: ${poolInfo.used}/${poolInfo.size}, Waiting: ${poolInfo.pending}`);
+        return true;
+    } catch (error) {
+        console.error('Database connection health check failed:', error.message);
+        return false;
+    }
+};
+
+const initializeDatabase = async () => {
+    try {
+        // 👇 VERIFICAR CONEXIÓN CON TIMEOUT
+        console.log('Initializing database connection...');
+        const connectionTimeout = setTimeout(() => {
+            throw new Error('Database connection timeout after 60 seconds');
+        }, 60000);
+
+        await sequelize.authenticate();
+        clearTimeout(connectionTimeout);
+        
         console.log('Connection to database has been established successfully.');
 
         // Import models
@@ -46,11 +112,21 @@ const initializeDatabase = async () => {
         // Importar el modelo AuditLog
         const AuditLog = require('../models/auditLog.model')(sequelize);
 
-        // Sync without forcing recreation of tables
-        await sequelize.sync();
+        // 👇 SYNC CON MANEJO DE ERRORES MEJORADO
+        console.log('Synchronizing database models...');
+        await sequelize.sync({ 
+            logging: false,
+            retry: {
+                max: 3,
+                timeout: 30000
+            }
+        });
 
         // Check if admin exists before creating
-        const adminExists = await User.findOne({ where: { username: 'admin' } });
+        const adminExists = await User.findOne({ 
+            where: { username: 'admin' },
+            timeout: 10000 // 10 segundos timeout para esta consulta
+        });
 
         if (!adminExists) {
             const hashedPassword = await bcrypt.hash('admin1', 8);
@@ -110,12 +186,47 @@ const initializeDatabase = async () => {
             console.log(`${productCount} products already exist, skipping seeding.`);
         }
 
+        // 👇 VERIFICAR ESTADO FINAL DEL POOL
+        await checkConnectionHealth();
+        
         console.log('Database initialization complete.');
     } catch (error) {
         console.error('Unable to initialize database:', error);
+        
+        // 👇 INTENTAR CERRAR CONEXIONES EN CASO DE ERROR
+        try {
+            await sequelize.close();
+            console.log('Database connections closed due to initialization error.');
+        } catch (closeError) {
+            console.error('Error closing database connections:', closeError);
+        }
+        
         throw error; // Re-lanzar el error para que la aplicación falle si la inicialización no es exitosa
     }
 };
+
+// 👇 FUNCIÓN PARA CERRAR CONEXIONES GRACEFULLY
+const closeDatabase = async () => {
+    try {
+        await sequelize.close();
+        console.log('Database connections closed successfully.');
+    } catch (error) {
+        console.error('Error closing database connections:', error);
+    }
+};
+
+// 👇 MANEJAR CIERRE GRACEFUL DE LA APLICACIÓN
+process.on('SIGINT', async () => {
+    console.log('Received SIGINT, closing database connections...');
+    await closeDatabase();
+    process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
+    console.log('Received SIGTERM, closing database connections...');
+    await closeDatabase();
+    process.exit(0);
+});
 
 // Añadir esta configuración para las migraciones
 module.exports = {
@@ -133,5 +244,7 @@ module.exports = {
     },
     sequelize,
     Sequelize,
-    initializeDatabase
+    initializeDatabase,
+    closeDatabase,
+    checkConnectionHealth
 };
